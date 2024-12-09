@@ -31,7 +31,7 @@ const Hero = () => {
         </p>
         <Link
           href="#"
-          className="inline-block bg-pink-500 text-white text-sm font-medium py-3 px-6 rounded-sm mt-6 hover:bg-pink-600 transition-all duration-300"
+          className="inline-block bg-pink-500 text-white text-sm font-medium py-3 px-6 rounded-sm mt-6"
         >
           Shop Now
         </Link>
