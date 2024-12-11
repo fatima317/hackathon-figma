@@ -20,7 +20,7 @@ const Hero = () => {
 
       {/* Center Column: Content (Title, Description, Button) */}
       <div className="md:w-1/2 max-w-[644px] text-center md:text-left flex flex-col items-center md:items-start">
-        <p className="text-sm text-pink-500 font-medium">
+        <p className="text-sm text-brandPrimary1 font-medium">
           Best Furniture For Your Castle...
         </p>
         <h1 className="text-3xl md:text-4xl font-bold text-indigo-950 leading-tight mt-2">
@@ -31,7 +31,7 @@ const Hero = () => {
         </p>
         <Link
           href="#"
-          className="inline-block bg-pink-500 text-white text-sm font-medium py-3 px-6 rounded-sm mt-6"
+          className="inline-block bg-brandPrimary1 text-white text-sm font-medium py-3 px-6 rounded-sm mt-6  hover:bg-pink-600 transition-all duration-300"
         >
           Shop Now
         </Link>

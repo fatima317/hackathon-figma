@@ -1,32 +1,33 @@
-import React from 'react';
-import { Button } from "@/components/ui/button";
-import { Circle } from "lucide-react";
-import Image from "next/image";
+import React from 'react'
+import { Button } from "@/components/ui/button"
+import { Circle } from "lucide-react"
+import Image from "next/image"
 
 const MiddleTwo = () => {
   return (
-    <div className="max-w-screen-xl mx-auto bg-[#F2F0FF] px-4 sm:px-8 lg:px-16">
-      {/* Container for the product image and details */}
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 py-16">
+    <div className="max-w-[1920px] mx-auto bg-[#F2F0FF]">
+      {/* Flex container for product image and description */}
+      <div className="flex flex-col md:flex-row items-center justify-center px-4 md:px-10 py-8 space-y-6 md:space-y-0" style={{ width: "100%" }}>
         
-        {/* Product Image Section */}
-        <div className="mb-4 max-w-xs mx-auto lg:max-w-md">
+        {/* Product Image */}
+        <div className="mb-4 md:mb-0 md:px-10 flex-shrink-0">
           <Image
             src="/Group 153.png"
             alt="Italian Sofa"
-            width={558}
-            height={550}
+            width={558} // Fixed width for the image
+            height={550} // Fixed height for the image
             className="mx-auto"
           />
         </div>
         
-        {/* Product Features Section */}
-        <div className="flex flex-col justify-between space-y-4 max-w-md mx-auto lg:max-w-xs">
-          <h3 className="text-2xl sm:text-3xl lg:text-[28px] font-bold text-brandPrimary2">
+        {/* Product Description Section */}
+        <div className="flex flex-col justify-between space-y-4 md:w-[492px]">
+          {/* Title */}
+          <h3 className="text-[28px] font-bold text-brandPrimary2">
             Unique Features Of Latest & Trending Products
           </h3>
           
-          {/* Feature List */}
+          {/* Features List */}
           <p className="flex items-center text-brandPrimary3 text-sm font-medium gap-2">
             <Circle className="stroke-brandPrimary1 w-2 h-2 fill-brandPrimary1" />
             All frames constructed with hardwood solids and laminates
@@ -42,16 +43,14 @@ const MiddleTwo = () => {
             Arms, backs, and seats are structurally reinforced
           </p>
           
-          {/* Add to Cart Button and Product Info */}
-          <div className="flex flex-col lg:flex-row gap-2 items-start lg:items-center">
-            <Button
-              className="bg-brandPrimary1 text-white font-medium text-sm rounded shadow-sm hover:bg-brandPrimary1"
-              style={{ width: "157px", height: "45px" }}
-            >
+          {/* Add to Cart & Price */}
+          <div className="flex gap-2">
+            <Button className="bg-brandPrimary1 text-white font-medium text-sm rounded shadow-sm  hover:bg-pink-600 transition-all duration-300"
+              style={{ width: "157px", height: "45px" }}>
               Add To Cart
             </Button>
-
-            {/* Product Info */}
+            
+            {/* Product Name and Price */}
             <div>
               <p className="text-xs font-bold text-brandPrimary2">B&B Italian Sofa</p>
               <p className="text-xs font-bold text-brandPrimary2">$32.00</p>
@@ -60,7 +59,7 @@ const MiddleTwo = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default MiddleTwo;
