@@ -6,7 +6,7 @@ const LatestBlog = () => {
   return (
     <section className="max-w-[1920px] mx-auto bg-white py-8">
       {/* Title of the section */}
-      <h1 className="text-center text-[28px] font-bold text-[#151875] mb-10">
+      <h1 className="text-center text-[32px] sm:text-[42px] font-bold text-[#151875] mb-10">
         Latest Blog
       </h1>
       

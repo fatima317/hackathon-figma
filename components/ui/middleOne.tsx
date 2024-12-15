@@ -5,7 +5,7 @@ const MiddleOne = () => {
   return (
     <section className="max-w-[1920px] mx-auto bg-white py-8">
       {/* Title */}
-      <h2 className="text-center text-[28px] font-bold text-[#151875] mb-10">
+      <h2 className="text-center text-[32px] sm:text-[42px] font-bold text-[#151875] mb-10">
         What Shopex Offer!
       </h2>
 

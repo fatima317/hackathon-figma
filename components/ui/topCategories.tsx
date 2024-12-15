@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 const TopCategories = () => {
   return (
     <section className="max-w-[1920px] mx-auto bg-white py-8">
-      <h2 className="text-center text-[28px] font-bold text-[#151875] mb-10">
+      <h2 className="text-center text-[32px] sm:text-[42px] font-bold text-[#151875] mb-10">
         Top Categories
       </h2>
       <div className="flex flex-wrap items-center justify-center m-4">
@@ -35,12 +35,12 @@ const TopCategories = () => {
               <Image
                 src={item.src}
                 alt={item.title}
-                width={178}
-                height={178}
+                width={158}
+                height={157}
                 className="mx-auto"
                 style={{
-                  width: index === 1 || index === 2 ? '158px' : '149px', 
-                  height: index === 1 || index === 2 ? '157px' : '149px',
+                  width: index === 1 || index === 2 ? '149px' : '158px', 
+                  height: index === 1 || index === 2 ? '149px' : '157px',
                 }}
               />
             </div>
