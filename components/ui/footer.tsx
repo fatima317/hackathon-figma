@@ -79,7 +79,7 @@ const Footer = () => {
               ©Webecy - All Rights Reserved
             </p>
           </div>
-          <div className='flex items-center gap-2'>
+          <div className='flex items-center gap-2 mr-40'>
             <p>
               <a href='https://www.facebook.com/' target='blank'>
                 <FaSquareFacebook className='text-[#151875] rounded-full text-3xl' />
