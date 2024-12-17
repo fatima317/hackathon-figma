@@ -14,7 +14,7 @@ const ContactUs = () => {
           <div className="flex flex-wrap items-center gap-3">
             <p className="text-black font-medium text-[14px] md:text-[16px]">Home</p>
             <p className="text-black font-medium text-[14px] md:text-[16px]">Pages</p>
-            <p className="text-brandPrimary1 font-medium text-[14px] md:text-[16px]">Contact us</p>
+            <p className="text-brandPrimary1 font-medium text-[14px] md:text-[16px]">Contact Us</p>
           </div>
         </div>
       </div>

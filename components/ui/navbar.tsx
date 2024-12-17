@@ -14,7 +14,8 @@ const Navbar = () => {
             <h2 className='text-[34px] font-bold text-[#0D0E43] ml-48'>Hekto</h2>
             <div className='flex flex-wrap items-center justify-center gap-6 text-[#0D0E43] '>
                 <p className='relative text-[#FB2E86]'> 
-                <Link href={"#"} className='text-[16px] font-medium'>
+                <Link href={"/"} className='text-[16px] font-medium'>
+                <button onClick={()=>route.push('/')}></button>
                 Home
                 <ChevronDown className='absolute w-5 h-4 ml-10 top-1'/>
                 </Link>
