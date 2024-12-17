@@ -1,3 +1,5 @@
+'use client';
+import {useRouter} from 'next/navigation';
 import { Input } from '@/components/ui/input';
 import { ChevronDown, Search } from 'lucide-react'
 import Link from 'next/link'
@@ -5,6 +7,7 @@ import React from 'react'
 
 
 const Navbar = () => {
+  const route = useRouter();
   return (
     <nav className='max-w-[1920px] mx-auto py-4'>
         <div className='max-w-[1177px] h-[40px] flex items-center justify-center gap-8'>
@@ -29,7 +32,8 @@ const Navbar = () => {
                 <Link href={"#"} className='text-[16px] font-medium'>Shop</Link>
                 </p>
                 <p>
-                <Link href={"#"} className='text-[16px] font-medium'>Contact</Link>
+                <Link href={"/contactUs"} className='text-[16px] font-medium'>Contact</Link>
+                <button onClick={()=>route.push('/contactUs')}></button>
                 </p>
             </div>
             <div className='hidden md:flex ml-16'> 
