@@ -24,13 +24,16 @@ const Navbar = () => {
                 <Link href={"#"} className='text-[16px] font-medium'>Pages</Link>
                 </p>
                 <p>
-                <Link href={"#"} className='text-[16px] font-medium'>Products</Link>
+                <Link href={"/productDetails"} className='text-[16px] font-medium'>Produts</Link>
+                <button onClick={()=>route.push('/productDetails')}></button>
                 </p>
                 <p>
-                <Link href={"#"} className='text-[16px] font-medium'>Blog</Link>
+                <Link href={"/blogPage"} className='text-[16px] font-medium'>Blog</Link>
+                <button onClick={()=>route.push('/blogPage')}></button>
                 </p>
                 <p>
-                <Link href={"#"} className='text-[16px] font-medium'>Shop</Link>
+                <Link href={"/shopGridDefault"} className='text-[16px] font-medium'>Shop</Link>
+                <button onClick={()=>route.push('/shopGridDefault')}></button>
                 </p>
                 <p>
                 <Link href={"/contactUs"} className='text-[16px] font-medium'>Contact</Link>
