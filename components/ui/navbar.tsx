@@ -9,9 +9,9 @@ import React from 'react'
 const Navbar = () => {
   const route = useRouter();
   return (
-    <nav className='max-w-[1920px] mx-auto py-4'>
-        <div className='max-w-[1177px] h-[40px] flex items-center justify-center gap-8'>
-            <h2 className='text-[34px] font-bold text-[#0D0E43] ml-48'>Hekto</h2>
+    <nav className='max-w-[1920px] mx-auto py-4 '>
+        <div className='max-w-[1177px] h-[40px] md:flex items-center justify-center gap-20'>
+            <h2 className='text-[34px] font-bold text-[#0D0E43] ml-28'>Hekto</h2>
             <div className='flex flex-wrap items-center justify-center gap-6 text-[#0D0E43] '>
                 <p className='relative text-[#FB2E86]'> 
                 <Link href={"/"} className='text-[16px] font-medium'>
@@ -40,7 +40,7 @@ const Navbar = () => {
                 <button onClick={()=>route.push('/contactUs')}></button>
                 </p>
             </div>
-            <div className='hidden md:flex ml-16'> 
+            <div className='hidden md:flex ml-24'> 
             <div className='relative' style={{width:"317px", height:"40px"}}>
                 <Input 
                 type='search' 

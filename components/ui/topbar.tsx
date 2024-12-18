@@ -3,8 +3,8 @@ import React from 'react'
 
 const Topbar = () => {
   return (
-    <div className='bg-[#7E33E0] w-[1920] mx-auto md:flex items-center justify-center gap-44'>
-      <div className='flex items-center justify-center gap-6 ml-10'>
+    <div className='bg-[#7E33E0] w-[1920] mx-auto md:flex items-center justify-between md:px-32'>
+      <div className='flex items-center justify-center gap-6'>
        <div className='relative'>
        <p className='text-[#F1F1F1] text-[14px] md:text-[16px] font-semibold gap-8'>
         <a href='mailto:mhhasanul@gmail.com' className='flex space-x-7'>
@@ -22,7 +22,7 @@ const Topbar = () => {
       </p>
        </div>
       </div>
-      <div className='flex items-center justify-center gap-4 p-2'>
+      <div className='flex items-center justify-center gap-2 p-2 mr-10'>
       <p className='flex items-center text-[#F1F1F1] text-[14px] md:text-[16px] font-semibold'>
         English
         <ChevronDown className='w-6 h-5'/>
