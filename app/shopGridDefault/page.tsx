@@ -10,16 +10,24 @@ const ShopGridDefault = () => {
     return (
       <section className='max-w-[1920px] mx-auto'>
         {/* Header Section */}
-        <div className="max-w-[1920px] mx-auto bg-[#F6F5FF] h-[286px] py-20">
-          <div className="flex flex-col items-start justify-center gap-2  px-6 md:px-28">
-            <h2 className="text-[#101750] text-[28px] md:text-[36px] font-bold"> Shop Grid Default</h2>
-            <div className="flex flex-wrap items-center gap-3">
-              <p className="text-black font-medium text-[14px] md:text-[16px]">Home</p>
-              <p className="text-black font-medium text-[14px] md:text-[16px]">Pages</p>
-              <p className="text-brandPrimary1 font-medium text-[14px] md:text-[16px]"> Shop Grid Default</p>
-            </div>
+        <div className="bg-[#F6F5FF] h-auto py-10 md:py-20">
+        <div className="flex flex-col items-start justify-center gap-2 px-4 md:px-16 lg:px-28">
+          <h2 className="text-[#101750] text-[24px] md:text-[28px] lg:text-[36px] font-bold">
+            Shop Grid Default
+          </h2>
+          <div className="flex flex-wrap items-center gap-2 md:gap-3">
+            <p className="text-black font-medium text-[12px] md:text-[14px] lg:text-[16px]">
+              Home
+            </p>
+            <p className="text-black font-medium text-[12px] md:text-[14px] lg:text-[16px]">
+              Pages
+            </p>
+            <p className="text-brandPrimary1 font-medium text-[12px] md:text-[14px] lg:text-[16px]">
+              Shop Grid Default
+            </p>
           </div>
         </div>
+      </div>
         {/* Product Toolbar */}
         <div className='max-w-[1171px] mx-auto flex flex-col md:flex-row md:justify-between gap-4 py-20 px-6'>
            {/* Title and Results */}
