@@ -78,7 +78,7 @@ const Navbar = () => {
                   Single Blog
                 </Link>
                 <Link
-                  href="/about"
+                  href="/aboutUs"
                   className="block py-2 text-[14px] font-semibold text-[#0D0E43] hover:bg-pink-300"
                 >
                   About Us
