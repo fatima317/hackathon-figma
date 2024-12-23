@@ -60,7 +60,7 @@ const ProductDetails = () => {
          />
           </div>
           {/* Product Info */}
-          <div className=' max-w-[549px] mx-auto flex flex-col py-10'>
+          <div className=' max-w-[549px] mx-auto flex flex-col py-20'>
             <h2 className="text-[24px] md:text-[36px] font-semibold text-[#0D134E] mt-4">Playwood arm chair</h2>
             <div className='flex gap-1 mt-2'>
               <Star className='w-4 h-5 stroke-transparent fill-[#FFC416]' />
@@ -94,7 +94,7 @@ const ProductDetails = () => {
         </div>
         {/* Description Section */}
         <div className='bg-[#F9F8FE] maz-w-[1920px] py-20'>
-          <div className='max-w-[1153px] mx-28 flex flex-col'>
+          <div className='max-w-[1153px] mx-26 flex flex-col'>
           <div className='flex gap-6 md:gap-14 mb-10'>
             <h3 className='font-semibold text-brandPrimary2 text-[18px] md:text-[24px] underline'>Description</h3>
             <h3 className='font-semibold text-brandPrimary2 text-[18px] md:text-[24px]'>Additional Info</h3>
@@ -110,7 +110,7 @@ const ProductDetails = () => {
             </div>
             <div className='flex gap-2 mb-1'>
               <ArrowRight />
-              <p className='text-brandPrimary3 font-semibold text-[16px] tracking-tight'>Aliquam dis vulputate vulputate integer sagittis. Faucibus ds diam arcu, nulla lobortis justo netus dis. Eu in fringilla vulputate nunc nec. Dui, massa viverr .</p>
+              <p className='text-[#2F1AC4] font-semibold text-[16px] tracking-tight'>Aliquam dis vulputate vulputate integer sagittis. Faucibus ds diam arcu, nulla lobortis justo netus dis. Eu in fringilla vulputate nunc nec. Dui, massa viverr .</p>
             </div>
             <div className='flex gap-2 mb-1'>
               <ArrowRight />
@@ -134,7 +134,7 @@ const ProductDetails = () => {
             ].map((products, index) => (
                 <div
                     key={index}
-                    className="relative flex flex-col px-3">
+                    className="relative flex flex-col px-2">
 
                 {/* Image */}
                 <div className='mb-4'>
