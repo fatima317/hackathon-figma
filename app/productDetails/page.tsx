@@ -123,7 +123,7 @@ const ProductDetails = () => {
           </div>
         </div>
          {/* Related Products */}
-        <div className='flex flex-col py-20 mx-20'>
+        <div className='flex flex-col py-20 mx-24'>
           <h2 className='text-[#101750] font-bold text-[28px] md:text-[36px] mb-6 px-4'>Related Products</h2>
           <div className='flex flex-wrap items-center'>
             {[
