@@ -94,7 +94,7 @@ const ProductDetails = () => {
         </div>
         {/* Description Section */}
         <div className='bg-[#F9F8FE] maz-w-[1920px] py-20'>
-          <div className='max-w-[1153px] mx-26 flex flex-col'>
+          <div className='max-w-[1153px] mx-auto flex flex-col'>
           <div className='flex gap-6 md:gap-14 mb-10'>
             <h3 className='font-semibold text-brandPrimary2 text-[18px] md:text-[24px] underline'>Description</h3>
             <h3 className='font-semibold text-brandPrimary2 text-[18px] md:text-[24px]'>Additional Info</h3>
@@ -109,8 +109,8 @@ const ProductDetails = () => {
               <p className='text-brandPrimary3 font-semibold text-[16px] tracking-tight'>Aliquam dis vulputate vulputate integer sagittis. Faucibus ds diam arcu, nulla lobortis justo netus dis. Eu in fringilla vulputate nunc nec. Dui, massa viverr .</p>
             </div>
             <div className='flex gap-2 mb-1'>
-              <ArrowRight />
-              <p className='text-[#2F1AC4] font-semibold text-[16px] tracking-tight'>Aliquam dis vulputate vulputate integer sagittis. Faucibus ds diam arcu, nulla lobortis justo netus dis. Eu in fringilla vulputate nunc nec. Dui, massa viverr .</p>
+              <ArrowRight className='stroke-[#2F1AC4]'/>
+              <p className='text-brandPrimary3 font-semibold text-[16px] tracking-tight'>Aliquam dis vulputate vulputate integer sagittis. Faucibus ds diam arcu, nulla lobortis justo netus dis. Eu in fringilla vulputate nunc nec. Dui, massa viverr .</p>
             </div>
             <div className='flex gap-2 mb-1'>
               <ArrowRight />
@@ -123,7 +123,7 @@ const ProductDetails = () => {
           </div>
         </div>
          {/* Related Products */}
-        <div className='flex flex-col py-20 mx-28'>
+        <div className='flex flex-col py-20 mx-auto'>
           <h2 className='text-[#101750] font-bold text-[28px] md:text-[36px] mb-6 px-4'>Related Products</h2>
           <div className='flex flex-wrap items-center'>
             {[
