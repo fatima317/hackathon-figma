@@ -11,7 +11,7 @@ const ShopList = () => {
       <section className='max-w-[1920px] mx-auto'>
          {/* Header Section */}
          <div className="bg-[#F6F5FF] h-auto py-10 md:py-20">
-        <div className="flex flex-col items-start justify-center gap-2 px-4 md:px-16 lg:px-28">
+        <div className="flex flex-col items-start justify-center gap-2 px-4 md:px-16 lg:px-28 mx-3">
           <h2 className="text-[#101750] text-[24px] md:text-[28px] lg:text-[36px] font-bold">
             Shop List
           </h2>
@@ -29,7 +29,7 @@ const ShopList = () => {
         </div>
       </div>
        {/* Product Toolbar */}
-       <div className='max-w-[1171px] mx-auto md:ml-14 flex flex-col md:flex-row md:justify-between pt-20 pb-10 px-4 md:px-14'>
+       <div className='max-w-[1171px] mx-auto md:ml-14 flex flex-col md:flex-row md:justify-between pt-20 pb-10 px-4 md:px-16'>
            {/* Title and Results */}
           <div>
           <h3 className='font-bold text-[22px] text-brandPrimary2'>Ecommerce Acceories & Fashion item</h3>

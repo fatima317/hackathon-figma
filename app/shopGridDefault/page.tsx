@@ -54,7 +54,7 @@ const ShopGridDefault = () => {
           </div>
         </div>
         {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12 px-6 md:px-24 py-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12 px-6 md:px-28 py-10">
         {[
           { src: '/image 9.png', width:201, height:201, title: 'Vel elit euismod', price: '$42.00', discount: '$26.00' },
           { src: '/image 1165.png',  width:169, height:169, title: 'Ultricies condimentum imperdiet', price: '$42.00', discount: '$26.00' },
