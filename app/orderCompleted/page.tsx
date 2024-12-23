@@ -9,7 +9,7 @@ const OrderCompleted = () => {
     <section className="max-w-[1920px] mx-auto">
       {/* Header Section */}
       <div className="bg-[#F6F5FF] h-auto py-10 md:py-20">
-        <div className="flex flex-col items-start justify-center gap-2 px-4 md:px-16 lg:px-28">
+        <div className="flex flex-col items-start justify-center gap-2 px-4 md:px-16 lg:px-28 mx-3">
           <h2 className="text-[#101750] text-[24px] md:text-[28px] lg:text-[36px] font-bold">
             Order Completed
           </h2>

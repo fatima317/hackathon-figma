@@ -9,7 +9,7 @@ const ContactUs = () => {
     <section className='max-w-[1920px] mx-auto'>
       {/* Header Section */}
       <div className="bg-[#F6F5FF] h-auto py-10 md:py-20">
-        <div className="flex flex-col items-start justify-center gap-2 px-4 md:px-16 lg:px-28">
+        <div className="flex flex-col items-start justify-center gap-2 px-4 md:px-16 lg:px-28 mx-3">
           <h2 className="text-[#101750] text-[24px] md:text-[28px] lg:text-[36px] font-bold">
             Contact Us
           </h2>
@@ -26,7 +26,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-        <div className="max-w-[1191px] h-[490px] mx-auto grid grid-cols-1 md:grid-cols-2 py-10 gap-4 px-6">
+        <div className="max-w-[1191px] h-[490px] mx-auto grid grid-cols-1 md:grid-cols-2 py-10 gap-4 px-7">
           {/* Information About Us */}
           <div className="flex flex-col items-start mt-4">
             <h2 className="text-[#101750] text-[28px] md:text-[36px] font-bold mb-4">Information About us</h2>
