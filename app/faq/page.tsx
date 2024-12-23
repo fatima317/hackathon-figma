@@ -26,7 +26,7 @@ const FAQ = () => {
         </div>
       </div>
        {/* FAQ and Ask a Question Section */}
-      <div className='flex flex-wrap py-10 md:py-20 justify-center px-4 md:px-14'>
+      <div className='flex flex-wrap py-10 md:py-20 justify-center items-center px-4'>
         {/* FAQ Section */}
         <div className='max-w-[90%] md:max-w-[499px] flex flex-col mx-auto'>
           <h2 className='text-[24px] md:text-[36px] font-bold text-[#1D3178] mb-10 md:mb-16'>Generel Information</h2>
