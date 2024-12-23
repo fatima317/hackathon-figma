@@ -29,7 +29,7 @@ const ShopGridDefault = () => {
         </div>
       </div>
         {/* Product Toolbar */}
-        <div className='max-w-[1171px] mx-auto flex flex-col md:flex-row md:justify-between gap-4 py-20 px-6'>
+        <div className='max-w-[1171px] mx-auto md:ml-14 flex flex-col md:flex-row md:justify-between pt-20 pb-10 px-4 md:px-14'>
            {/* Title and Results */}
           <div>
           <h3 className='font-bold text-[22px] text-brandPrimary2'>Ecommerce Acceories & Fashion item</h3>
