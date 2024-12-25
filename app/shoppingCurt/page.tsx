@@ -28,9 +28,9 @@ const ShoppingCurt = () => {
        {/* Cart Items Section */}
       <div className='py-10 md:py-20'>
         {/* Table Headers */}
-      <div className='flex flex-wrap gap-10 md:gap-24 ml-32 mb-8'>
+      <div className='flex flex-wrap gap-10 md:gap-20 ml-32 mb-8'>
         <h3 className='text-brandPrimary2 text-[18px] lg:text-[20px] font-bold'>Product</h3>
-        <h3 className='text-brandPrimary2 text-[18px] lg:text-[20px] font-bold ml-24'>Price</h3>
+        <h3 className='text-brandPrimary2 text-[18px] lg:text-[20px] font-bold ml-28'>Price</h3>
         <h3 className='text-brandPrimary2 text-[18px] lg:text-[20px] font-bold'>Quantity</h3>
         <h3 className='text-brandPrimary2 text-[18px] lg:text-[20px] font-bold'>Total</h3>
         <h3 className='text-brandPrimary2 text-[18px] lg:text-[20px] font-bold ml-24'>Cart Totals</h3>
@@ -69,7 +69,7 @@ const ShoppingCurt = () => {
               <p className='text-brandPrimary2 font-medium text-[14px] ml-9'>$32.00</p>
             </div>
             {/* Quantity Selector */}
-            <div className='ml-24'>
+            <div className='ml-20'>
               <Image
                src={"/Group 248.png"}
                alt='quantity bar'
@@ -79,7 +79,7 @@ const ShoppingCurt = () => {
             </div>
             {/* Total Price */}
             <div>
-              <p className='text-[#15245E] font-medium text-[14px] ml-24'>£219.00</p>
+              <p className='text-[#15245E] font-medium text-[14px] ml-20'>£219.00</p>
             </div>
             </div>
             ))}
