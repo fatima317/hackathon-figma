@@ -30,10 +30,10 @@ const SingleBlog = () => {
         </div>
       </div>
       {/* Main Content Section */}
-      <div className='flex flex-wrap pt-20 pb-10 px-6 md:px-8 lg:px-16 gap-4 lg:gap-8'>
+      <div className='flex flex-wrap pt-20 pb-10 px-6 md:px-16'>
          {/* Left Content */}
         <div className='max-w-full lg:max-w-[870px]'>
-        <div className='flex flex-col'>
+        <div className='flex flex-col md:px-8'>
           {/* Main Blog Image */}
           <Image 
           src="/bruce-mars-FWVMhUa_wbY-unsplash 2.png" 
@@ -54,16 +54,16 @@ const SingleBlog = () => {
             </div>  
           </div>
            {/* Blog Content */}
-          <h2 className='text-brandPrimary2 text-[20px] md:text-[24px] lg:text-[30px] font-bold mb-4'>Mauris at orci non vulputate diam tincidunt nec.</h2>
-          <p className='text-brandPrimary3 text-[14px] md:text-[16px] font-medium my-4'>
+          <h2 className='text-brandPrimary2 text-[20px] md:text-[24px] lg:text-[30px] font-bold mb-4 tracking-tight'>Mauris at orci non vulputate diam tincidunt nec.</h2>
+          <p className='text-brandPrimary3 text-[14px] md:text-[16px] font-medium my-4 tracking-tight'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit facilisis quis auctor pretium ipsum, eu rutrum. Condimentum eu malesuada vitae ultrices in in neque, porta dignissim. Adipiscing purus, cursus vulputate id id dictum at.
           </p>
-          <p className='text-brandPrimary3 text-[16px] font-medium my-8'>
+          <p className='text-brandPrimary3 text-[16px] font-medium my-8 tracking-tight'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, 
           </p>
           {/* Blockquote Section */}
           <div className='bg-[#FAFAFB] py-8 px-4 border-2 border-l-brandPrimary1 my-8'>
-            <p className='text-brandPrimary3 italic text-[16px] md:text-[18px] font-semibold leading-loose tracking-tight'>
+            <p className='text-brandPrimary3 italic text-[16px] md:text-[18px] font-semibold leading-loose tracking-tighter'>
               “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo dictum sapien, amet, consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo dictum sapien, amet, consequat toamk risusu”
             </p>
           </div>
@@ -85,11 +85,11 @@ const SingleBlog = () => {
             ))}     
           </div>
           {/* Blog Additional Section */}
-          <p className='text-brandPrimary3 text-[16px] font-medium my-8'>
+          <p className='text-brandPrimary3 text-[16px] font-medium my-8 tracking-tight'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, 
           </p>
           {/* Responsive Cards */}
-          <div className='grid grid-cols-2 md:grid-cols-4 gap-4'>
+          <div className='grid grid-cols-2 md:grid-cols-4 gap-2'>
             {[
               {src:'/Rectangle 63.png', title:'Quam sed'},
               {src:'/Rectangle 63 (1).png', title:'Tristique sed'},
@@ -98,7 +98,7 @@ const SingleBlog = () => {
             ].map((products, index) => (
               <div
                key={index}
-               className="flex flex-col items-center"
+               className="flex flex-col items-center px-2"
                style={{width:'209.54px', height:'319.53'}}
                >
                 <div className='my-4'>
@@ -109,11 +109,11 @@ const SingleBlog = () => {
                 height={254.7}
                 />
                 </div>
-                <h3 className='text-black font-medium text-[19px] px-6 my-2'>{products.title}</h3>
+                <h3 className='text-black font-medium text-[19px] px-6 my-2 tracking-tight'>{products.title}</h3>
                 <div className='flex gap-4 px-3'>
                   <div className='flex gap-2'>
-                  <p className='text-[#232A69] text-[14px] font-medium'>$32.00</p>
-                  <p className='text-brandPrimary1 line-through text-[14px] font-medium'>$56.00</p>
+                  <p className='text-[#232A69] text-[14px] font-medium tracking-tight'>$32.00</p>
+                  <p className='text-brandPrimary1 line-through text-[14px] font-medium tracking-tight'>$56.00</p>
                   </div>
                   <div className='flex'>
                     <Star className='w-4 h-5 stroke-transparent fill-[#FFC416]'/>
@@ -126,8 +126,8 @@ const SingleBlog = () => {
               </div>
             ))}     
           </div>
-          <p className='text-brandPrimary3 font-medium text-[16px] my-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, </p>
-          <p className='text-brandPrimary3 font-medium text-[16px] my-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, </p>
+          <p className='text-brandPrimary3 font-medium text-[16px] my-8 tracking-tight'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, </p>
+          <p className='text-brandPrimary3 font-medium text-[16px] my-8 tracking-tight'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, </p>
           </div>
           <div className='flex px-2 gap-4 my-8 items-center justify-center'>
             <div className='bg-[#5625DF] rounded-full w-6 h-6'><FaFacebookF className='fill-white w-6 h-6 p-1'/></div>
