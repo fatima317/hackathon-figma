@@ -30,10 +30,10 @@ const SingleBlog = () => {
         </div>
       </div>
       {/* Main Content Section */}
-      <div className='flex flex-wrap pt-20 pb-10 px-4 md:px-24 md:gap-8'>
+      <div className='flex flex-wrap pt-20 pb-10 px-4 md:px-20 md:gap-6'>
          {/* Left Content */}
-        <div className='w-full md:max-w-[870px] md:w-[69%]'>
-        <div className='flex flex-col md:px-2'>
+        <div className='w-full md:max-w-[870px] md:w-[70%]'>
+        <div className='flex flex-col md:px-3'>
           {/* Main Blog Image */}
           <Image 
           src="/bruce-mars-FWVMhUa_wbY-unsplash 2.png" 
@@ -56,15 +56,21 @@ const SingleBlog = () => {
            {/* Blog Content */}
           <h2 className='text-brandPrimary2 text-[20px] md:text-[24px] lg:text-[30px] font-bold mb-4 tracking-tight'>Mauris at orci non vulputate diam tincidunt nec.</h2>
           <p className='text-brandPrimary3 text-[14px] md:text-[16px] font-medium my-4 tracking-tight'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit facilisis quis auctor pretium ipsum, eu rutrum. Condimentum eu malesuada vitae ultrices in in neque, porta dignissim. Adipiscing purus, cursus vulputate id id dictum at.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit facilisis quis auctor pretium ipsum, eu rutrum. Condimentum
+          eu malesuada vitae ultrices in in neque, porta dignissim. Adipiscing purus, cursus vulputate id id dictum at.
           </p>
           <p className='text-brandPrimary3 text-[16px] font-medium my-8 tracking-tight'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit
+          morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu
+          platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, 
           </p>
           {/* Blockquote Section */}
           <div className='bg-[#FAFAFB] py-8 px-4 border-2 border-l-brandPrimary1 my-8'>
             <p className='text-brandPrimary3 italic text-[16px] md:text-[18px] font-semibold leading-loose tracking-tighter'>
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo dictum sapien, amet, consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo dictum sapien, amet, consequat toamk risusu”
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo dictum sapien, amet, consequat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo dictum sapien, amet, consequat
+              toamk risusu”
             </p>
           </div>
           {/* Blog Content Images */}
@@ -85,8 +91,11 @@ const SingleBlog = () => {
             ))}     
           </div>
           {/* Blog Additional Section */}
-          <p className='text-brandPrimary3 text-[16px] font-normal my-8 tracking-tight'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, 
+          <p className='text-brandPrimary3 text-[16px] font-medium my-8 tracking-tight'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit
+          morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu
+          platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, 
           </p>
           {/* Responsive Cards */}
           <div className='grid grid-cols-2 md:grid-cols-4 gap-2'>
