@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ArrowLeft, ArrowRight, Calendar, Mail, PenTool, Star, User } from "lucide-react";
+import { ArrowLeft, ArrowRight, Calendar, Mail, PenTool, Search, Star, User } from "lucide-react";
 import React from 'react';
 import { Input } from '@/components/ui/input';
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
@@ -202,7 +202,10 @@ const SingleBlog = () => {
         <div className='flex flex-col'>
           {/* Search Box */}
           <h3 className='text-brandPrimary2 text-[22px] font-semibold mb-2'>Search</h3>
-          <Input className='w-[270px] h-[40px] stroke-[#BDBDD8] mb-10'/>
+          <div className='relative' style={{ width: '270px', height: '40px' }}>
+          <Input className='stroke-[#CBCBE0] mb-10 px-4 placeholder:text-[#CBCBE0] rounded-none' placeholder='Search For Posts' type='search'/>
+          <Search className='w-4 h-4 right-3 top-3 stroke-[#CBCBE0] absolute'/>
+          </div>
           {/* Categories */}
           <h3 className='text-brandPrimary2 text-[22px] font-semibold mb-2'>Categories</h3>
           <div className='flex flex-col mb-4'>
