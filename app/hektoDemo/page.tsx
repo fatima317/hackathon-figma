@@ -27,7 +27,7 @@ const HektoDemo = () => {
         </div>
       </div>
       {/* Main Content Section */}
-      <div className='py-28 px-4 md:px-8 lg:px-32'>
+      <div className='py-28 px-4 md:px-8 lg:px-28 gap-2'>
         <h2 className='text-[24px] font-bold text-brandPrimary2 mb-2'>Hekto Demo</h2>
         <p className='text-[12px] text-brandPrimary2 font-medium mb-4'>
           Cart/ Information/ Shipping/ Payment
