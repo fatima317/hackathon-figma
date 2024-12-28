@@ -89,7 +89,7 @@ const BlogPage = () => {
           </div>
           </div>
          {/* Sidebar Section */} 
-        <div className='flex flex-col mx-6'>
+        <div className='flex flex-col'>
           {/* Search Box */}
           <h3 className='text-brandPrimary2 text-[22px] font-semibold mb-2'>Search</h3>
           <div className='relative' style={{ width: '270px', height: '40px' }}>
