@@ -35,7 +35,7 @@ const HektoDemo = () => {
       
       <div className='flex flex-col lg:flex-row gap-6'>
         {/* Left Section: Contact and Shipping Information */}
-        <div className='w-full md:w-[52%] md:max-w-[770px] bg-[#F8F8FD]'>
+        <div className='w-full md:w-[55%] md:max-w-[770px] bg-[#F8F8FD]'>
           <div className='flex flex-col px-4 md:px-8 py-10'>
             <div className='flex justify-between'>
             <h3 className='text-[18px] text-brandPrimary2 font-bold mb-8'>Contact Information</h3>

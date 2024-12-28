@@ -30,10 +30,10 @@ const SingleBlog = () => {
         </div>
       </div>
       {/* Main Content Section */}
-      <div className='flex flex-wrap pt-20 pb-10 px-24 gap-4'>
+      <div className='flex flex-wrap pt-20 pb-10 md:px-24 md:gap-6'>
          {/* Left Content */}
-        <div className='w-full md:max-w-[870px] md:w-[64%]'>
-        <div className='flex flex-col px-3'>
+        <div className='w-full md:max-w-[870px] md:w-[70%]'>
+        <div className='flex flex-col px-4'>
           {/* Main Blog Image */}
           <Image 
           src="/bruce-mars-FWVMhUa_wbY-unsplash 2.png" 
