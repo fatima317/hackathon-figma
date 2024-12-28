@@ -30,10 +30,10 @@ const SingleBlog = () => {
         </div>
       </div>
       {/* Main Content Section */}
-      <div className='flex flex-wrap pt-20 pb-10 px-6 md:px-16'>
+      <div className='flex flex-wrap pt-20 pb-10 px-24 gap-4'>
          {/* Left Content */}
-        <div className='max-w-full lg:max-w-[870px]'>
-        <div className='flex flex-col md:px-8'>
+        <div className='w-full md:max-w-[870px] md:w-[64%]'>
+        <div className='flex flex-col px-3'>
           {/* Main Blog Image */}
           <Image 
           src="/bruce-mars-FWVMhUa_wbY-unsplash 2.png" 
@@ -127,7 +127,7 @@ const SingleBlog = () => {
             ))}     
           </div>
           <p className='text-brandPrimary3 font-medium text-[16px] my-8 tracking-tight'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, </p>
-          <p className='text-brandPrimary3 font-medium text-[16px] my-8 tracking-tight'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, </p>
+          <p className='text-brandPrimary3 font-medium text-[16px] my-4 tracking-tight'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, </p>
           </div>
           <div className='flex px-2 gap-4 my-8 items-center justify-center'>
             <div className='bg-[#5625DF] rounded-full w-6 h-6'><FaFacebookF className='fill-white w-6 h-6 p-1'/></div>
@@ -207,7 +207,7 @@ const SingleBlog = () => {
           <Search className='w-4 h-4 right-3 top-3 stroke-[#CBCBE0] absolute'/>
           </div>
           {/* Categories */}
-          <h3 className='text-brandPrimary2 text-[22px] font-semibold mb-2'>Categories</h3>
+          <h3 className='text-brandPrimary2 text-[22px] font-semibold my-4'>Categories</h3>
           <div className='flex flex-col mb-4'>
             <div className='flex mb-4 gap-4'>
               <div className='bg-[#F939BF] w-[122px] h-[30px] p-1.5'>
