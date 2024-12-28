@@ -33,7 +33,7 @@ const SingleBlog = () => {
       <div className='flex flex-wrap pt-20 pb-10 px-4 md:px-24 md:gap-6'>
          {/* Left Content */}
         <div className='w-full md:max-w-[870px] md:w-[68%]'>
-        <div className='flex flex-col md:px-3'>
+        <div className='flex flex-col md:px-2'>
           {/* Main Blog Image */}
           <Image 
           src="/bruce-mars-FWVMhUa_wbY-unsplash 2.png" 
@@ -98,7 +98,7 @@ const SingleBlog = () => {
             ].map((products, index) => (
               <div
                key={index}
-               className="flex flex-col items-center px-2"
+               className="flex flex-col items-center px-3"
                style={{width:'209.54px', height:'319.53'}}
                >
                 <div className='my-4'>
