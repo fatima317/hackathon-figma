@@ -27,7 +27,7 @@ const HektoDemo = () => {
         </div>
       </div>
       {/* Main Content Section */}
-      <div className='py-28 px-4 md:px-8 lg:px-28 gap-2'>
+      <div className='py-28 px-4 md:px-8 lg:px-32'>
         <h2 className='text-[24px] font-bold text-brandPrimary2 mb-2'>Hekto Demo</h2>
         <p className='text-[12px] text-brandPrimary2 font-medium mb-4'>
           Cart/ Information/ Shipping/ Payment
@@ -35,7 +35,7 @@ const HektoDemo = () => {
       
       <div className='flex flex-col lg:flex-row gap-4'>
         {/* Left Section: Contact and Shipping Information */}
-        <div className='max-w-full lg:max-w-[770px] bg-[#F8F8FD]'>
+        <div className='w-full md:w-[50%] md:max-w-[770px] bg-[#F8F8FD]'>
           <div className='flex flex-col px-4 md:px-8 py-10'>
             <div className='flex justify-between'>
             <h3 className='text-[18px] text-brandPrimary2 font-bold mb-8'>Contact Information</h3>
@@ -55,11 +55,11 @@ const HektoDemo = () => {
             <h3 className='text-[18px] text-brandPrimary2 font-bold my-8'>Shipping address</h3>
             <div className='flex flex-col'>
               <div className='flex flex-col md:flex-row justify-between my-4'>
-              <div className="w-full md:w-[48%]">
+              <div className="w-full md:w-[50%]">
               <p className='text-[#C1C8E1] text-[14px] font-medium mb-2'>First name (optional)</p>
               <Image src={"/Line 15.png"} alt='line' width={336} height={0} className="w-full"/>
               </div>
-              <div className="w-full md:w-[48%] mt-4 md:mt-0">
+              <div className="w-full md:w-[50%] mt-4 md:mt-0">
               <p className='text-[#C1C8E1] text-[14px] font-medium mb-2'>Last name</p>
               <Image src={"/Line 15.png"} alt='line' width={336} height={0} className="w-full"/>
               </div>
@@ -84,7 +84,7 @@ const HektoDemo = () => {
                 ))}
                 {/* Country and Postal Code */}
               <div className='flex flex-col md:flex-row justify-between my-4'>
-              <div className="w-full md:w-[48%]">
+              <div className="w-full md:w-[40%]">
               <p className='text-[#C1C8E1] text-[14px] font-medium mb-2'>Bangladesh</p>
               <Image src={"/Line 15.png"} alt='line' width={336} height={0} className="w-full"/>
               </div>
@@ -104,7 +104,7 @@ const HektoDemo = () => {
         </div>
 
         {/* Right Section: Product and Cart Totals */}
-        <div className='flex flex-col items-center gap-2'>
+        <div className='flex flex-col items-center gap-2 px-2'>
           {[
             {src:"/Rectangle 34 (1).png", title:"Ut diam consequat", description1:"Color:Brown", description2:"Size:XL"},
             {src:"/Rectangle 144.png", title:"Ut diam consequat", description1:"Color:Brown", description2:"Size:XL"},
