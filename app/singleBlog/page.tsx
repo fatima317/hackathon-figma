@@ -30,7 +30,7 @@ const SingleBlog = () => {
         </div>
       </div>
       {/* Main Content Section */}
-      <div className='flex flex-wrap pt-20 pb-10 px-6 md:px-16 lg:px-28 gap-6 lg:gap-10'>
+      <div className='flex flex-wrap pt-20 pb-10 px-6 md:px-8 lg:px-16 gap-4 lg:gap-8'>
          {/* Left Content */}
         <div className='max-w-full lg:max-w-[870px]'>
         <div className='flex flex-col'>
