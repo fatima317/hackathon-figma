@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Calendar, Circle, PenTool } from "lucide-react";
+import { Calendar, Circle, PenTool, Search } from "lucide-react";
 import React from 'react';
 import { Input } from '@/components/ui/input';
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
@@ -28,7 +28,7 @@ const BlogPage = () => {
         </div>
       </div>
       {/* Main Blog Content */}
-      <div className='flex flex-wrap pt-20 pb-10 px-4 md:px-16 lg:px-32 gap-12'>
+      <div className='flex flex-wrap pt-20 pb-10 px-4 md:px-16'>
         {/* Blog Section */}
         <div className='max-w-[870px] w-full'>
            {/* Each Blog Post */}
@@ -52,7 +52,7 @@ const BlogPage = () => {
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit facilisis quis auctor pretium ipsum, eu rutrum. Condimentum eu malesuada vitae ultrices in in neque, porta dignissim.",
             },
           ].map((post, index) => (
-          <div key={index} className="flex flex-col mb-12">
+          <div key={index} className="flex flex-col mb-12 px-8">
           <Image 
           src={post.image} 
           alt='Blog Image' 
@@ -71,8 +71,8 @@ const BlogPage = () => {
             <p className='text-brandPrimary2 text-[14px] font-medium bg-[#FFECE2] px-4 py-1'>Aug 09 2020</p>
             </div>  
           </div>
-          <h2 className='text-brandPrimary2 text-[24px] md:text-[30px] font-bold mb-4'>{post.title}</h2>
-          <p className='text-brandPrimary3 text-[16px] font-medium mb-6'>{post.content}</p>
+          <h2 className='text-brandPrimary2 text-[24px] md:text-[30px] font-bold mb-4 tracking-tight'>{post.title}</h2>
+          <p className='text-brandPrimary3 text-[16px] font-medium mb-6 tracking-tight'>{post.content}</p>
           <div className='flex items-center gap-2'>
             <h3 className='text-brandPrimary2 text-[18px] font-bold'>Read More </h3>
             <Circle className='fill-brandPrimary1 stroke-brandPrimary1 w-2 h-2'/>
@@ -89,10 +89,13 @@ const BlogPage = () => {
           </div>
           </div>
          {/* Sidebar Section */} 
-        <div className='flex flex-col'>
+        <div className='flex flex-col mx-6'>
           {/* Search Box */}
           <h3 className='text-brandPrimary2 text-[22px] font-semibold mb-2'>Search</h3>
-          <Input className='w-[270px] h-[40px] stroke-[#BDBDD8] mb-10'/>
+          <div className='relative' style={{ width: '270px', height: '40px' }}>
+          <Input className='stroke-[#CBCBE0] mb-10 px-4 placeholder:text-[#CBCBE0] rounded-none' placeholder='Search For Posts' type='search'/>
+          <Search className='w-4 h-4 right-3 top-3 stroke-[#CBCBE0] absolute'/>
+          </div>
           {/* Categories */}
           <h3 className='text-brandPrimary2 text-[22px] font-semibold mb-2'>Categories</h3>
           <div className='flex flex-col mb-4'>
