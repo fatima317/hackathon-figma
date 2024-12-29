@@ -55,11 +55,11 @@ const SingleBlog = () => {
           </div>
            {/* Blog Content */}
           <h2 className='text-brandPrimary2 text-[20px] md:text-[24px] lg:text-[30px] font-bold mb-4 tracking-tight'>Mauris at orci non vulputate diam tincidunt nec.</h2>
-          <p className='text-brandPrimary3 text-[14px] md:text-[16px] font-medium my-4 tracking-tight'>
+          <p className='text-brandPrimary3 text-[14px] font-medium my-4 tracking-tight'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit facilisis quis auctor pretium ipsum, eu rutrum. Condimentum
           eu malesuada vitae ultrices in in neque, porta dignissim. Adipiscing purus, cursus vulputate id id dictum at.
           </p>
-          <p className='text-brandPrimary3 text-[16px] font-medium my-8 tracking-tight'>
+          <p className='text-brandPrimary3 text-[14px] font-medium my-8 tracking-tight'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit
           morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur
           adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu
@@ -67,7 +67,7 @@ const SingleBlog = () => {
           </p>
           {/* Blockquote Section */}
           <div className='bg-[#FAFAFB] py-8 px-4 border-2 border-l-brandPrimary1 my-8'>
-            <p className='text-brandPrimary3 italic text-[16px] md:text-[18px] font-semibold leading-loose tracking-tighter'>
+            <p className='text-brandPrimary3 italic text-[14px] font-semibold leading-loose tracking-tighter'>
               “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo dictum sapien, amet, consequat.
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo dictum sapien, amet, consequat
               toamk risusu”
@@ -91,7 +91,7 @@ const SingleBlog = () => {
             ))}     
           </div>
           {/* Blog Additional Section */}
-          <p className='text-brandPrimary3 text-[16px] font-medium my-8 tracking-tight'>
+          <p className='text-brandPrimary3 text-[14px] font-medium my-8 tracking-tight'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit
           morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur
           adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu
@@ -118,7 +118,7 @@ const SingleBlog = () => {
                 height={254.7}
                 />
                 </div>
-                <h3 className='text-black font-medium text-[19px] px-2 my-2 tracking-tight'>{products.title}</h3>
+                <h3 className='text-black font-medium text-[18px] px-2 my-2 tracking-tight'>{products.title}</h3>
                 <div className='flex gap-4 px-4'>
                   <div className='flex gap-2'>
                   <p className='text-[#232A69] text-[14px] font-medium tracking-tight'>$32.00</p>
@@ -135,8 +135,8 @@ const SingleBlog = () => {
               </div>
             ))}     
           </div>
-          <p className='text-brandPrimary3 font-medium text-[16px] my-8 tracking-tight'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, </p>
-          <p className='text-brandPrimary3 font-medium text-[16px] my-4 tracking-tight'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, </p>
+          <p className='text-brandPrimary3 font-medium text-[14px] my-8 tracking-tight'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, </p>
+          <p className='text-brandPrimary3 font-medium text-[14px] my-4 tracking-tight'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, montes, lacus consequat integer viverra. Sit morbi etiam quam rhoncus. Velit in arcu platea donec vitae ante posuere malesuada.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit dapibus est, nunc, </p>
           </div>
           <div className='flex px-2 gap-4 my-8 items-center justify-center'>
             <div className='bg-[#5625DF] rounded-full w-6 h-6'><FaFacebookF className='fill-white w-6 h-6 p-1'/></div>
@@ -146,10 +146,10 @@ const SingleBlog = () => {
           <div className='bg-[#F7F8FB] w-[882.69px] h-[45px] flex justify-between px-2'>
             <div className='flex items-center gap-1'>
             <ArrowLeft className='stroke-brandPrimary3 w-4 h-4'/>
-            <p className='text-brandPrimary3 font-medium text-[16px]'>Previous Post</p>
+            <p className='text-brandPrimary3 font-medium text-[14px]'>Previous Post</p>
             </div>
             <div className='flex items-center gap-1'>
-            <p className='text-brandPrimary3 font-medium text-[16px]'>Next Post</p>
+            <p className='text-brandPrimary3 font-medium text-[14px]'>Next Post</p>
             <ArrowRight className='stroke-brandPrimary3 w-4 h-4' />
             </div>
           </div>
