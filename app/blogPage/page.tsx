@@ -28,9 +28,9 @@ const BlogPage = () => {
         </div>
       </div>
       {/* Main Blog Content */}
-      <div className='flex flex-wrap pt-20 pb-10 px-4 md:px-16'>
+      <div className='flex flex-wrap pt-20 pb-10 px-4 md:px-24 md:gap-8'>
         {/* Blog Section */}
-        <div className='max-w-[870px] w-full'>
+        <div className='w-full md:max-w-[870px] md:w-[68%]'>
            {/* Each Blog Post */}
            {[
             {
@@ -52,7 +52,7 @@ const BlogPage = () => {
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit facilisis quis auctor pretium ipsum, eu rutrum. Condimentum eu malesuada vitae ultrices in in neque, porta dignissim.",
             },
           ].map((post, index) => (
-          <div key={index} className="flex flex-col mb-12 px-8">
+          <div key={index} className="flex flex-col mb-12 md:px-4">
           <Image 
           src={post.image} 
           alt='Blog Image' 
@@ -72,9 +72,9 @@ const BlogPage = () => {
             </div>  
           </div>
           <h2 className='text-brandPrimary2 text-[24px] md:text-[30px] font-bold mb-4 tracking-tight'>{post.title}</h2>
-          <p className='text-brandPrimary3 text-[16px] font-medium mb-6 tracking-tight'>{post.content}</p>
+          <p className='text-brandPrimary3 text-[14px] font-medium mb-6 tracking-tight'>{post.content}</p>
           <div className='flex items-center gap-2'>
-            <h3 className='text-brandPrimary2 text-[18px] font-bold'>Read More </h3>
+            <h3 className='text-brandPrimary2 text-[16px] font-bold'>Read More </h3>
             <Circle className='fill-brandPrimary1 stroke-brandPrimary1 w-2 h-2'/>
           </div>
           </div>
