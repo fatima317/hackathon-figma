@@ -82,12 +82,12 @@ const ProductDetails = () => {
               </div>
               <p className='text-brandPrimary2 text-[16px] font-semibold mt-4'>Categories:</p>
               <p className='text-brandPrimary2 text-[16px] font-semibold mt-4'>Tags</p>
-              <div className='flex gap-4'>
+              <div className='flex gap-4 items-center'>
               <p className='text-brandPrimary2 text-[16px] font-semibold mt-4'>Share</p>
-              <div className='flex gap-4 mt-5'>
-                <div className='bg-[#151875] rounded-full w-2 h-2'><FaFacebookF className='fill-white w-2 h-2 p-1'/></div>
-                <div className='bg-[#FF27B7] rounded-full w-2 h-2'><FaInstagram className='fill-white w-2 h-2 p-1'/></div>
-                <div className='bg-[#151875] rounded-full  w-2 h-2'><FaTwitter className='fill-white w-2 h-2 p-1'/></div>
+              <div className='flex gap-4'>
+                <div className='bg-[#151875] rounded-full w-3 h-3'><FaFacebookF className='fill-white w-3 h-3 p-1'/></div>
+                <div className='bg-[#FF27B7] rounded-full w-3 h-3'><FaInstagram className='fill-white w-3 h-3 p-1'/></div>
+                <div className='bg-[#151875] rounded-full  w-3 h-3'><FaTwitter className='fill-white w-3 h-3 p-1'/></div>
                 </div>
               </div>
           </div>
