@@ -3,28 +3,28 @@ import { Button } from '@/components/ui/button'
 
 const Hero = () => {
   return (
-    <section className=" max-w-[1920] mx-auto bg-[#F2F0FF] h-[764px]">
-      <div className="flex flex-wrap items-center">
+    <section className="max-w-[1920px] bg-[#F2F0FF] h-[764px] gap-2">
+      <div className="flex flex-wrap">
         {/* Left Column: Lamp Image */}
-      <div className="md:w-1/6 -mt-96">
+      <div className="w-full md:w-[10%] flex items-start">
           <Image
             src="/lamp.png"
             alt="Lamp"
             width={387}
             height={387}
-            className="object-contain"
+            className=""
           />
       </div>
 
       {/* Center Column: Content (Title, Description, Button) */}
-      <div className="md:w-2/5 max-w-[644px] text-left flex flex-col items-start justify-center mt-12">
+      <div className="md:w-[40%] max-w-[644px] text-left flex flex-col justify-center mb-4">
         <p className="text-[16px] text-pink-500 font-medium">
           Best Furniture For Your Castle...
         </p>
-        <h1 className="text-[48px] font-bold text-black tracking-tight mt-4">
+        <h1 className="text-[52px] font-bold text-black tracking-tight mt-4">
           New Furniture Collection Trends in 2020
         </h1>
-        <p className="text-[#8A8FB9] text-[15px] font-medium mt-8">
+        <p className="text-[#8A8FB9] text-[16px] font-medium mt-8">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est
           adipiscing in phasellus non in justo.
         </p>
