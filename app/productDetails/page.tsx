@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from "next/image";
 import {ArrowRight, Heart, Star} from 'lucide-react'
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 import MiddleFour from '@/components/ui/middleFour';
 const ProductDetails = () => {
     return (
@@ -84,11 +84,11 @@ const ProductDetails = () => {
               <p className='text-brandPrimary2 text-[16px] font-semibold mt-4'>Tags</p>
               <div className='flex gap-4'>
               <p className='text-brandPrimary2 text-[16px] font-semibold mt-4'>Share</p>
-              <div className='flex gap-4 mt-5'>
-                <FaFacebook className='w-4 h-4 rounded-full'/>
-                <FaInstagram className='w-4 h-4 bg-brandPrimary1 stroke-white rounded-full' />
-                <FaTwitter className='w-4 h-4 rounded-full' /> 
-              </div>
+              <div className='flex px-2 gap-4 mb-8'>
+                <div className='bg-[#151875] rounded-full w-6 h-6'><FaFacebookF className='fill-white w-6 h-6 p-1'/></div>
+                <div className='bg-[#FF27B7] rounded-full w-6 h-6'><FaInstagram className='fill-white w-6 h-6 p-1'/></div>
+                <div className='bg-[#151875] rounded-full  w-6 h-6'><FaTwitter className='fill-white w-6 h-6 p-1'/></div>
+                </div>
               </div>
           </div>
         </div>
