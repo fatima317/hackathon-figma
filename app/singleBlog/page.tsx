@@ -33,7 +33,7 @@ const SingleBlog = () => {
       <div className='flex flex-wrap pt-20 pb-10 px-4 md:px-20 md:gap-6'>
          {/* Left Content */}
         <div className='w-full md:max-w-[870px] md:w-[70%]'>
-        <div className='flex flex-col md:px-3'>
+        <div className='flex flex-col md:px-4'>
           {/* Main Blog Image */}
           <Image 
           src="/bruce-mars-FWVMhUa_wbY-unsplash 2.png" 
