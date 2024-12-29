@@ -72,7 +72,7 @@ const BlogPage = () => {
             </div>  
           </div>
           <h2 className='text-brandPrimary2 text-[24px] md:text-[30px] font-bold mb-4 tracking-tight'>{post.title}</h2>
-          <p className='text-brandPrimary3 text-[14px] font-medium mb-6 tracking-tight'>{post.content}</p>
+          <p className='text-brandPrimary3 text-[15px] font-medium mb-6 tracking-tight'>{post.content}</p>
           <div className='flex items-center gap-2'>
             <h3 className='text-brandPrimary2 text-[16px] font-bold'>Read More </h3>
             <Circle className='fill-brandPrimary1 stroke-brandPrimary1 w-2 h-2'/>
