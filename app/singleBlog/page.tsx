@@ -33,7 +33,7 @@ const SingleBlog = () => {
       <div className='flex flex-wrap pt-20 pb-10 px-4 md:px-24 md:gap-6'>
          {/* Left Content */}
         <div className='w-full md:max-w-[870px] md:w-[68%]'>
-        <div className='flex flex-col md:px-3'>
+        <div className='flex flex-col md:px-4'>
           {/* Main Blog Image */}
           <Image 
           src="/bruce-mars-FWVMhUa_wbY-unsplash 2.png" 
@@ -67,7 +67,7 @@ const SingleBlog = () => {
           </p>
           {/* Blockquote Section */}
           <div className='bg-[#FAFAFB] py-8 px-4 border-2 border-l-brandPrimary1 my-8'>
-            <p className='text-brandPrimary3 italic text-[14px] font-semibold leading-loose tracking-tighter'>
+            <p className='text-brandPrimary3 italic text-[14px] font-semibold leading-loose tracking-tight'>
               “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo dictum sapien, amet, consequat.
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo dictum sapien, amet, consequat
               toamk risusu”
