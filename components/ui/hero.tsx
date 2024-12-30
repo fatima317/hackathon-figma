@@ -10,8 +10,8 @@ const Hero = () => {
           <Image
             src="/lamp.png"
             alt="Lamp"
-            width={287}
-            height={287}
+            width={587}
+            height={587}
             objectFit="cover"
             className="object-contain"
           />
@@ -36,7 +36,7 @@ const Hero = () => {
 
       </div>
       {/* Right Column: Chair Image */}
-      <div className="w-[40%] mt-28">
+      <div className="w-[42%] mt-28">
           <Image
             src="/sofa promotional header.png"
             alt="Furniture Chair"
