@@ -6,19 +6,19 @@ const Hero = () => {
     <section className="max-w-[1920px] bg-[#F2F0FF] h-[764px] items-center">
       <div className="flex w-full flex-wrap px-2">
         {/* Left Column: Lamp Image */}
-      <div className="w-[15%]">
+      <div className="w-[14%]">
           <Image
             src="/lamp.png"
             alt="Lamp"
-            width={237}
-            height={237}
+            width={257}
+            height={257}
             objectFit="cover"
             className="object-contain"
           />
       </div>
 
       {/* Center Column: Content (Title, Description, Button) */}
-      <div className="w-[45%] max-w-[644px] text-left flex flex-col justify-center py-6">
+      <div className="w-[44%] max-w-[644px] text-left flex flex-col justify-center py-6">
         <p className="text-[16px] text-pink-500 font-medium">
           Best Furniture For Your Castle...
         </p>
@@ -35,7 +35,7 @@ const Hero = () => {
         </div>
       </div>
       {/* Right Column: Chair Image */}
-      <div className="w-[42%] mt-28">
+      <div className="w-[40%] mt-28">
           <Image
             src="/sofa promotional header.png"
             alt="Furniture Chair"
