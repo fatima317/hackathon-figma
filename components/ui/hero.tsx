@@ -4,21 +4,21 @@ import { Button } from '@/components/ui/button'
 const Hero = () => {
   return (
     <section className="max-w-[1920px] bg-[#F2F0FF] h-[764px]">
-      <div className="flex w-full px-4">
+      <div className="flex w-full px-2">
         {/* Left Column: Lamp Image */}
       <div className="w-[10%]">
           <Image
             src="/lamp.png"
             alt="Lamp"
-            width={387}
-            height={387}
+            width={487}
+            height={487}
             objectFit="cover"
             className="object-contain"
           />
       </div>
 
       {/* Center Column: Content (Title, Description, Button) */}
-      <div className="w-[45%] max-w-[644px] text-left flex flex-col justify-center py-6">
+      <div className="w-[44%] max-w-[644px] text-left flex flex-col justify-center py-6">
         <p className="text-[16px] text-pink-500 font-medium">
           Best Furniture For Your Castle...
         </p>
