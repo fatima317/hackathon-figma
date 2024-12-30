@@ -10,15 +10,15 @@ const Hero = () => {
           <Image
             src="/lamp.png"
             alt="Lamp"
-            width={257}
-            height={257}
+            width={247}
+            height={247}
             objectFit="cover"
             className="object-contain"
           />
       </div>
 
       {/* Center Column: Content (Title, Description, Button) */}
-      <div className="w-[40%] max-w-[644px] text-left flex flex-col justify-center py-6">
+      <div className="w-[44%] max-w-[644px] text-left flex flex-col justify-center py-6">
         <p className="text-[16px] text-pink-500 font-medium">
           Best Furniture For Your Castle...
         </p>
