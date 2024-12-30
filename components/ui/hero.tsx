@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 const Hero = () => {
   return (
     <section className="max-w-[1920px] bg-[#F2F0FF] h-[764px] items-center">
-      <div className="flex w-full justify-between px-2">
+      <div className="flex w-full flex-wrap px-2">
         {/* Left Column: Lamp Image */}
       <div className="w-[15%]">
           <Image
