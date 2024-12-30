@@ -16,9 +16,6 @@ const Hero = () => {
             className="object-contain"
           />
       </div>
-
-      {/* Center Column: Content (Title, Description, Button) */}
-      <div className="w-[44%] max-w-[644px] text-left flex flex-col justify-center py-6">
         <p className="text-[16px] text-pink-500 font-medium">
           Best Furniture For Your Castle...
         </p>
@@ -33,8 +30,6 @@ const Hero = () => {
           <Button className="bg-brandPrimary1 text-white font-semibold text-[17px] rounded shadow-sm hover:bg-pink-600 transition-all duration-300" 
           style={{ width: "163px", height: "50px" }}>Shop Now</Button>
         </div>
-
-      </div>
       {/* Right Column: Chair Image */}
       <div className="w-[40%] mt-28">
           <Image
