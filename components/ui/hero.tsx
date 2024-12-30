@@ -3,10 +3,10 @@ import { Button } from '@/components/ui/button'
 
 const Hero = () => {
   return (
-    <section className="max-w-[1920px] bg-[#F2F0FF] h-[764px]">
-      <div className="flex w-full px-2">
+    <section className="max-w-[1920px] bg-[#F2F0FF] h-[764px] items-center">
+      <div className="flex w-full justify-between px-2">
         {/* Left Column: Lamp Image */}
-      <div className="w-[14%]">
+      <div className="w-[15%]">
           <Image
             src="/lamp.png"
             alt="Lamp"
