@@ -4,9 +4,9 @@ import { Button } from '@/components/ui/button'
 const Hero = () => {
   return (
     <section className="max-w-[1920px] bg-[#F2F0FF] h-[764px]">
-      <div className="flex flex-wrap">
+      <div className="flex w-full px-6">
         {/* Left Column: Lamp Image */}
-      <div className="">
+      <div className="flex-shrink-0">
           <Image
             src="/lamp.png"
             alt="Lamp"
@@ -36,7 +36,7 @@ const Hero = () => {
 
       </div>
       {/* Right Column: Chair Image */}
-      <div className="mt-20">
+      <div className="flex-shrink-0 w-[38%] mt-20">
           <Image
             src="/sofa promotional header.png"
             alt="Furniture Chair"
