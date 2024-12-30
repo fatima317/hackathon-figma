@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="max-w-[1920px] bg-[#F2F0FF] h-[764px]">
       <div className="flex w-full px-6">
         {/* Left Column: Lamp Image */}
-      <div className="flex-shrink-0">
+      <div className="flex-shrink-0 w-[15%]">
           <Image
             src="/lamp.png"
             alt="Lamp"
@@ -18,7 +18,7 @@ const Hero = () => {
       </div>
 
       {/* Center Column: Content (Title, Description, Button) */}
-      <div className="max-w-[644px] text-left flex flex-col justify-center mb-4">
+      <div className="max-w-[644px] text-left flex flex-col justify-center">
         <p className="text-[16px] text-pink-500 font-medium">
           Best Furniture For Your Castle...
         </p>
@@ -36,7 +36,7 @@ const Hero = () => {
 
       </div>
       {/* Right Column: Chair Image */}
-      <div className="flex-shrink-0 w-[38%] mt-20">
+      <div className="flex-shrink-0 w-[40%] justify-center">
           <Image
             src="/sofa promotional header.png"
             alt="Furniture Chair"
