@@ -18,11 +18,11 @@ const Hero = () => {
       </div>
 
       {/* Center Column: Content (Title, Description, Button) */}
-      <div className="w-[44%] max-w-[644px] text-left flex flex-col justify-center py-6">
+      <div className="w-[45%] max-w-[644px] text-left flex flex-col justify-center py-6">
         <p className="text-[16px] text-pink-500 font-medium">
           Best Furniture For Your Castle...
         </p>
-        <h1 className="text-[52px] font-bold text-black tracking-tight mt-4">
+        <h1 className="text-[48px] font-bold text-black tracking-tight mt-4">
           New Furniture Collection Trends in 2020
         </h1>
         <p className="text-[#8A8FB9] text-[16px] font-medium mt-8">
@@ -36,7 +36,7 @@ const Hero = () => {
 
       </div>
       {/* Right Column: Chair Image */}
-      <div className="w-[36%] mt-28">
+      <div className="w-[38%] mt-28">
           <Image
             src="/sofa promotional header.png"
             alt="Furniture Chair"
