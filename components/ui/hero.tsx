@@ -6,13 +6,14 @@ const Hero = () => {
     <section className="max-w-[1920px] bg-[#F2F0FF] h-[764px]">
       <div className="flex flex-wrap">
         {/* Left Column: Lamp Image */}
-      <div className="w-full md:w-[11%] flex items-start">
+      <div className="w-full md:w-[15%]">
           <Image
             src="/lamp.png"
             alt="Lamp"
             width={387}
             height={387}
-            className=""
+            objectFit="cover"
+            className="object-contain"
           />
       </div>
 
