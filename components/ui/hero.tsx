@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="max-w-[1920px] bg-[#F2F0FF] h-[764px] items-center">
       <div className="flex w-full flex-wrap px-2">
         {/* Left Column: Lamp Image */}
-      <div className="w-[13%]">
+      <div className="w-[14%]">
           <Image
             src="/lamp.png"
             alt="Lamp"
