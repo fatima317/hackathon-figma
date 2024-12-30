@@ -10,8 +10,8 @@ const Hero = () => {
           <Image
             src="/lamp.png"
             alt="Lamp"
-            width={257}
-            height={257}
+            width={187}
+            height={187}
             objectFit="cover"
             className="object-contain"
           />
