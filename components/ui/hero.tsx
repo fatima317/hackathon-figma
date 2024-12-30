@@ -6,12 +6,12 @@ const Hero = () => {
     <section className="max-w-[1920px] bg-[#F2F0FF] h-[764px]">
       <div className="flex w-full px-4">
         {/* Left Column: Lamp Image */}
-      <div className="w-[15%]">
+      <div className="w-[10%]">
           <Image
             src="/lamp.png"
             alt="Lamp"
-            width={247}
-            height={247}
+            width={387}
+            height={387}
             objectFit="cover"
             className="object-contain"
           />
