@@ -36,7 +36,7 @@ const Hero = () => {
 
       </div>
       {/* Right Column: Chair Image */}
-      <div className="w-full md:w-2/5 mt-20">
+      <div className="w-full md:w-[40%] mt-20">
           <Image
             src="/sofa promotional header.png"
             alt="Furniture Chair"
