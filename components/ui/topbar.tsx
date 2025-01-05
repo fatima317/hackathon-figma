@@ -22,7 +22,7 @@ const Topbar = () => {
       </p>
        </div>
       </div>
-      <div className='flex items-center justify-center gap-2 p-2 mr-10'>
+      <div className='hidden md:flex items-center justify-center gap-2 p-2 mr-10'>
       <p className='flex items-center text-[#F1F1F1] text-[14px] md:text-[16px] font-semibold'>
         English
         <ChevronDown className='w-6 h-5'/>

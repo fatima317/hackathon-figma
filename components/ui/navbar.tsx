@@ -1,17 +1,20 @@
 'use client';
 import { useRouter } from 'next/navigation';
 import { Input } from '@/components/ui/input';
-import { ChevronDown, Search } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
+import { ChevronDown, Menu,  Heart, Search, ShoppingCart } from 'lucide-react';
 import Link from 'next/link';
 import React, { useState } from 'react';
 
 const Navbar = () => {
   const router = useRouter();
   const [showHomeDropdown, setShowHomeDropdown] = useState(false);
+  const [showPageDropdown, setShowPageDropdown] = useState(false);
 
   return (
-    <nav className="max-w-[1920px] mx-auto py-4">
-      <div className="max-w-[1177px] h-[40px] md:flex items-center justify-center gap-20">
+    <nav className="max-w-[1920px] mx-auto py-4 px-4 md:px-0">
+      <div className="max-w-[1177px] h-[40px] hidden md:flex items-center justify-center gap-20">
         <h2 className="text-[34px] font-bold text-[#0D0E43] ml-28">Hekto</h2>
         <div className="flex flex-wrap items-center justify-center gap-4 text-[#0D0E43]">
           {/* Home Dropdown */}
@@ -137,6 +140,58 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      <Sheet>
+            <SheetTrigger className='flex md:hidden'>
+            <Button variant={"outline"} size={"icon"}>
+            <Menu className='size-4 text-gray-400'/>
+            </Button>
+            </SheetTrigger>
+            <SheetContent side={"right"}>
+                <SheetHeader className='flex items-start'>
+                    <SheetTitle>Hekto</SheetTitle>
+                </SheetHeader>
+                <div className='flex flex-col gap-6 mt-6'>
+                    <Link href={"/"} className='text-sm font-medium'>Home</Link>
+                    <Link href={"/myAccount"} className='text-sm font-medium'>My Account</Link>
+                    <Link href={"/shopGridDefault"} className='text-sm font-medium'>Shop</Link>
+                    <Link href={"/productDetails"} className='text-sm font-medium'>Products</Link>
+                    <div className="relative flex items-center">
+                    <p onClick={() => router.push('/notFound')} className="text-sm font-medium cursor-pointer">Pages</p>
+                    <ChevronDown className="w-5 h-4 cursor-pointer" onClick={() => setShowPageDropdown(!showPageDropdown)}/>
+                    {showPageDropdown && (
+                   <div className="absolute">
+                    <Link href={"/shoppingCurt"} className='block text-sm font-medium'> Shopping Cart</Link>
+                    <Link href={"/orderCompleted"} className='block text-sm font-medium'>Order Completed</Link>
+                    <Link href={"/shopList"} className='block text-sm font-medium'> Shop List</Link>
+                    <Link href={"/shopLeftSidebar"} className='block text-sm font-medium'> Shop Left Sidebar</Link>
+                    <Link href={"/singleBlog"} className='block text-sm font-medium'> Single Blog</Link>
+                    <Link href={"/hektoDemo"} className='block text-sm font-medium'> Hekto Demo</Link>
+                   </div>
+                    )}
+                    </div>
+                    <Link href={"/blogPage"} className='text-sm font-medium'>Blog</Link>
+                    <Link href={"/contactUs"} className='text-sm font-medium'>Contact</Link>
+                    <Link href={"/aboutUs"} className='text-sm font-medium'> About Us</Link>
+                    <Link href={"/faq"} className='text-sm font-medium'>FAQ</Link>
+                <div className='mt-4'>
+                <div className='relative'>
+                <Input 
+                placeholder='What are you looking for? ' 
+                className='bg-[#F5F5F5] rounded text-sm font-extralight text-[#7D8184]'/>
+                <Search className='absolute right-2 top-2 text-gray-600'/>
+            </div>
+                <div className='flex gap-4 mt-6'>
+                <Button variant={"outline"} size={"icon"} className='rounded-full'>
+                <Heart />
+                </Button>
+                <Button variant={"outline"} size={"icon"} className='rounded-full'>
+                <ShoppingCart />
+                </Button>
+                </div>
+                </div>
+                </div>
+            </SheetContent>
+         </Sheet>
     </nav>
   );
 };
