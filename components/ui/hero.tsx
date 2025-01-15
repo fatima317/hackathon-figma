@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="max-w-[1920px] bg-[#F2F0FF] md:h-[764px] h-auto items-center">
       <div className="flex w-full flex-wrap px-2">
         {/* Left Column: Lamp Image */}
-      <div className="md:w-[15%] w-[25%]">
+      <div className="md:w-[15%] w-[30%]">
           <Image
             src="/lamp.png"
             alt="Lamp"
@@ -35,7 +35,7 @@ const Hero = () => {
         </div>
       </div>
       {/* Right Column: Chair Image */}
-      <div className="md:w-[40%] mt-10 md:mt-28">
+      <div className="md:w-[40%] w-[30%] mt-10 md:mt-28">
           <Image
             src="/sofa promotional header.png"
             alt="Furniture Chair"
