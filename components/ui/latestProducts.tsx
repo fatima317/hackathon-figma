@@ -8,15 +8,15 @@ const LatestProducts = () => {
         <section className="max-w-[1920px] mx-auto bg-white py-8">
             {/* Title */}
             <h2 className="text-center text-[32px] sm:text-[42px] font-bold text-[#151875] mb-10">
-              Leatest Products
+              Latest Products
             </h2>
             
             {/* CATEGORIES */}
-            <div className="flex flex-row items-center mb-6 lg:px-96">
+            <div className="flex flex-row items-center mb-6 lg:px-96 px-4">
                 {["New Arrival", "Best Seller", "Featured", "Special Offer"
                     ].map((category, index) => (
                     <div key={index} 
-                    className="text-brandPrimary2 text-[18px] flex flex-col items-center"
+                    className="text-brandPrimary2 text-[14px] md:text-[18px] flex flex-col items-center"
                     style={{
                         width: '527px',
                         height: '22px',
@@ -28,7 +28,7 @@ const LatestProducts = () => {
             </div>
     
             {/* PRODUCTS */}
-            <div className="grid grid-cols-1 gap-8 px-4 md:grid-cols-2 lg:grid-cols-3 justify-items-center lg:gap-28 lg:px-40 py-4">
+            <div className="grid grid-cols-1 gap-8 px-4 py-8 md:grid-cols-2 lg:grid-cols-3 justify-items-center lg:gap-28 lg:px-40 lg:py-4">
             {[
               { src: "/image 1166 (1).png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00"},
               { src: "/image 15.png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00"},
@@ -107,7 +107,7 @@ const LatestProducts = () => {
               </div>
               </div>
               )}
-              <div className='flex items-center justify-between gap-8 mt-16 mb-10'>
+              <div className='md:flex items-center justify-between gap-8 mt-16 mb-10'>
               <p className="text-[#151875] font-semibold text-[14px]">
               {products.title}
               </p>
