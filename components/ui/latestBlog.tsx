@@ -13,9 +13,9 @@ const LatestBlog = () => {
       {/* Container for the blog posts */}
       <div className="flex flex-wrap items-center justify-center gap-4 m-6">
         {[
-          { src: "/blog1.png.png", title: "Top Essential Trends in 2021", author: "SaberAli" },
+          { src: "/blog1.png.png", title: "Top Essential Trends in 2021", author: "SaberAli " },
           { src: "/blog2.png.png", title: "Top Essential Trends in 2021", author: "Surfuxion" },
-          { src: "/blog3.png.png", title: "Top Essential Trends in 2021", author: "SaberAli" },
+          { src: "/blog3.png.png", title: "Top Essential Trends in 2021", author: "SaberAli " },
         ].map((post, index) => (
           <div
             key={index}
@@ -37,7 +37,7 @@ const LatestBlog = () => {
             <div className="text-sm text-[#151875] flex items-center justify-center pr-28">
               <span><PenTool className="stroke-[#FB2E86] w-4 h-4" /></span>
               <p>{post.author}</p>
-              <span><Calendar className="stroke-[#FFA454] w-4 h-4 ml-8" /></span>
+              <span><Calendar className="stroke-[#FFA454] w-4 h-4 lg:ml-8 ml-4" /></span>
               <p>21 August, 2020</p>
             </div>
 

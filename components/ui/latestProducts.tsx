@@ -5,7 +5,7 @@ import {Heart, Search, ShoppingCart } from 'lucide-react'
 import { Badge } from '@/components/ui/badge';
 const LatestProducts = () => {
   return (
-        <section className="max-w-[1920px] mx-auto bg-white py-8">
+        <section className="max-w-[1920px] mx-auto bg-white py-12">
             {/* Title */}
             <h2 className="text-center text-[32px] sm:text-[42px] font-bold text-[#151875] mb-10">
               Latest Products
@@ -28,7 +28,7 @@ const LatestProducts = () => {
             </div>
     
             {/* PRODUCTS */}
-            <div className="grid grid-cols-1 gap-10 px-4 md:grid-cols-2 lg:grid-cols-3 justify-items-center lg:gap-28 lg:px-40 py-4">
+            <div className="grid grid-cols-1 gap-14 px-4 md:grid-cols-2 lg:grid-cols-3 justify-items-center lg:gap-28 lg:px-40 py-4">
             {[
               { src: "/image 1166 (1).png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00", width:223, height:229},
               { src: "/image 15.png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00", width:245, height:245},
@@ -48,7 +48,7 @@ const LatestProducts = () => {
             }}
             >
                     {/* Image */}
-            <div className="mt-24">
+            <div className="lg:mt-24 mt-8">
               <Image
                 src={products.src}
                 alt={products.title}
