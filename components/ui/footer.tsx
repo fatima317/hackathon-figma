@@ -12,7 +12,7 @@ const Footer = () => {
     <div className='max-w-[1920px] mx-auto'>
       {/* Footer Section */}
       <footer className='md:h-[450px] h-auto bg-[#EEEFFB] text-[#8A8FB9]'>
-        <div className='flex flex-col gap-4 md:flex-row gap-x-20 mt-12 pt-20 p-4 md:pl-28'>
+        <div className='flex flex-col gap-8 md:flex-row gap-x-20 mt-12 pt-20 p-4 md:pl-28'>
           
           {/* Footer Column 1: Logo, Newsletter, Contact Info */}
           <div className='space-y-6'>
@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
           
           {/* Footer Column 3: Customer Care */}
-          <div className='md:space-y-8 space-y-4'>
+          <div className='md:space-y-8 space-y-2'>
             <h1 className='text-[22px] text-black font-semibold'>Customer Care</h1>
             <ul className='text-[16px] text-[#8A8FB9] md:space-y-4 space-y-2'>
               <li onClick={() => router.push('/myAccount')}>My Account</li>
@@ -60,7 +60,7 @@ const Footer = () => {
           </div>
           
           {/* Footer Column 4: Pages */}
-          <div className='md:space-y-8 space-y-4'>
+          <div className='md:space-y-8 space-y-2'>
             <h1 className='text-[22px] text-black font-semibold'>Pages</h1>
             <ul className='text-[16px] text-[#8A8FB9] md:space-y-4 space-y-2'>
               <li onClick={() => router.push('/blogPage')}>Blog</li>
