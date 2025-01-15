@@ -48,7 +48,7 @@ const LatestProducts = () => {
             }}
             >
                     {/* Image */}
-            <div className="lg:mt-24 mt-8">
+            <div className="lg:mt-24 mt-12">
               <Image
                 src={products.src}
                 alt={products.title}
@@ -103,7 +103,7 @@ const LatestProducts = () => {
               </div>
               </div>
               )}
-              <div className='flex items-center justify-between gap-8 mt-16 mb-10'>
+              <div className='flex items-center justify-between gap-8 mt-16 mb-6 lg:mb-10'>
               <p className="text-[#151875] font-semibold text-[14px]">
               {products.title}
               </p>
