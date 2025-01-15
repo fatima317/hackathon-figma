@@ -3,7 +3,7 @@ import React from 'react'
 
 const Topbar = () => {
   return (
-    <div className='bg-[#7E33E0] w-[1920] mx-auto md:flex items-center justify-between md:px-32'>
+    <div className='bg-[#7E33E0] w-[1920] mx-auto md:flex items-center justify-between md:px-32 sm:py-2'>
       <div className='flex items-center justify-center gap-6'>
        <div className='relative'>
        <p className='text-[#F1F1F1] text-[14px] md:text-[16px] font-semibold gap-8'>
