@@ -3,10 +3,10 @@ import { Button } from '@/components/ui/button'
 
 const Hero = () => {
   return (
-    <section className="max-w-[1920px] bg-[#F2F0FF] h-[764px] items-center">
+    <section className="max-w-[1920px] bg-[#F2F0FF] md:h-[764px] h-auto items-center">
       <div className="flex w-full flex-wrap px-2">
         {/* Left Column: Lamp Image */}
-      <div className="md:w-[15%]">
+      <div className="md:w-[15%] w-[25%]">
           <Image
             src="/lamp.png"
             alt="Lamp"
@@ -25,17 +25,17 @@ const Hero = () => {
         <h1 className="text-2xl md:text-[48px] font-bold text-black tracking-tight mt-4">
           New Furniture Collection Trends in 2020
         </h1>
-        <p className="text-[#8A8FB9] text-[16px] font-medium mt-8">
+        <p className="text-[#8A8FB9] text-[16px] font-medium mt-4 md:mt-8">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est
           adipiscing in phasellus non in justo.
         </p>
-        <div className="mt-8">
-          <Button className="bg-brandPrimary1 text-white font-semibold text-[17px] rounded shadow-sm hover:bg-pink-600 transition-all duration-300" 
+        <div className="mt-4 md:mt-8">
+          <Button className="bg-brandPrimary1 text-white font-semibold text-sm md:text-[17px] rounded shadow-sm hover:bg-pink-600 transition-all duration-300" 
           style={{ width: "163px", height: "50px" }}>Shop Now</Button>
         </div>
       </div>
       {/* Right Column: Chair Image */}
-      <div className="md:w-[40%] mt-28">
+      <div className="md:w-[40%] mt-10 md:mt-28">
           <Image
             src="/sofa promotional header.png"
             alt="Furniture Chair"
