@@ -12,7 +12,7 @@ const Footer = () => {
     <div className='max-w-[1920px] mx-auto'>
       {/* Footer Section */}
       <footer className='md:h-[450px] h-auto bg-[#EEEFFB] text-[#8A8FB9]'>
-        <div className='flex sm:flex-col sm:gap-4 md:flex-row gap-x-20 mt-12 pt-20 sm:p-4 md:pl-28'>
+        <div className='flex flex-col gap-4 md:flex-row gap-x-20 mt-12 pt-20 p-4 md:pl-28'>
           
           {/* Footer Column 1: Logo, Newsletter, Contact Info */}
           <div className='space-y-6'>
@@ -36,9 +36,9 @@ const Footer = () => {
           </div>
           
           {/* Footer Column 2: Categories */}
-          <div className='md:space-y-8 sm:space-y-2'>
+          <div className='md:space-y-8 space-y-2'>
             <h1 className='text-[22px] text-black font-semibold'>Categories</h1>
-            <ul className='text-[16px] text-[#8A8FB9] md:space-y-4 sm:space-y-2'>
+            <ul className='text-[16px] text-[#8A8FB9] md:space-y-4 space-y-2'>
               <li>Laptops & Computers</li>
               <li>Cameras & Photography</li>
               <li>Smart Phones & Tablets</li>
@@ -48,9 +48,9 @@ const Footer = () => {
           </div>
           
           {/* Footer Column 3: Customer Care */}
-          <div className='space-y-8 sm:space-y-4'>
+          <div className='md:space-y-8 space-y-4'>
             <h1 className='text-[22px] text-black font-semibold'>Customer Care</h1>
-            <ul className='text-[16px] text-[#8A8FB9] space-y-4 sm:space-y-2'>
+            <ul className='text-[16px] text-[#8A8FB9] md:space-y-4 space-y-2'>
               <li onClick={() => router.push('/myAccount')}>My Account</li>
               <li onClick={() => router.push('/productDetails')}>Discount</li>
               <li>Returns</li>
@@ -60,9 +60,9 @@ const Footer = () => {
           </div>
           
           {/* Footer Column 4: Pages */}
-          <div className='space-y-8 sm:space-y-4'>
+          <div className='md:space-y-8 space-y-4'>
             <h1 className='text-[22px] text-black font-semibold'>Pages</h1>
-            <ul className='text-[16px] text-[#8A8FB9] space-y-4 sm:space-y-2'>
+            <ul className='text-[16px] text-[#8A8FB9] md:space-y-4 space-y-2'>
               <li onClick={() => router.push('/blogPage')}>Blog</li>
               <li onClick={() => router.push('/shopList')}>Browse The Shop</li>
               <li onClick={() => router.push('/')}>Category</li>
@@ -77,11 +77,11 @@ const Footer = () => {
         {/* Footer Bottom: Social Media and Copyright */}
         <div className='max-w-[1920px] mx-auto bg-[#E7E4F8] flex items-center justify-between p-4 mt-20'>
           <div className='flex items-center justify-center'>
-            <p className='text-xs text-[#9DA0AE] ml-8 lg:ml-32'>
+            <p className='text-xs text-[#9DA0AE] ml-8 md:ml-32'>
               ©Webecy - All Rights Reserved
             </p>
           </div>
-          <div className='flex items-center gap-2 mr-40 sm:mr-20'>
+          <div className='flex items-center gap-2 md:mr-40 mr-20'>
             <p>
               <a href='https://www.facebook.com/' target='blank'>
                 <FaSquareFacebook className='text-[#151875] rounded-full text-3xl' />
