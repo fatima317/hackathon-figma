@@ -26,7 +26,7 @@ const DiscountItem = () => {
       </div>
 
       {/* Main Content: Text on Left, Image on Right */}
-      <div className="max-w-[1214px] mx-auto flex flex-col-reverse lg:flex-row items-center justify-between h-[597px] px-6 lg:px-12 gap-6 lg:gap-0">
+      <div className="max-w-[1214px] mx-auto flex flex-col lg:flex-row items-center justify-between h-auto lg:h-[597px] px-6 lg:px-12 gap-6 lg:gap-0">
         {/* Text on the Left */}
         <div className="flex flex-col items-start max-w-[515px] mx-auto">
           <h3 className="text-brandPrimary2 font-bold text-[28px] sm:text-[35px] mb-4">
@@ -38,7 +38,7 @@ const DiscountItem = () => {
           <p className="text-[#B8B8DC] font-medium text-[17px] mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu eget feugiat habitasse nec, bibendum condimentum.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
           {[
             "Material expose like metals",
             "Clear lines and geometric figures",

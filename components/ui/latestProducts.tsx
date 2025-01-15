@@ -5,18 +5,18 @@ import {Heart, Search, ShoppingCart } from 'lucide-react'
 import { Badge } from '@/components/ui/badge';
 const LatestProducts = () => {
   return (
-        <section className="max-w-[1920px] mx-auto bg-white py-12">
+        <section className="max-w-[1920px] mx-auto bg-white py-8">
             {/* Title */}
             <h2 className="text-center text-[32px] sm:text-[42px] font-bold text-[#151875] mb-10">
               Latest Products
             </h2>
             
             {/* CATEGORIES */}
-            <div className="flex flex-row items-center mb-6 lg:px-96 px-4">
+            <div className="flex flex-row items-center mb-6 lg:px-96">
                 {["New Arrival", "Best Seller", "Featured", "Special Offer"
                     ].map((category, index) => (
                     <div key={index} 
-                    className="text-brandPrimary2 text-[14px] md:text-[18px] flex flex-col items-center"
+                    className="text-brandPrimary2 text-[16px] lg:text-[18px] flex flex-col items-center"
                     style={{
                         width: '527px',
                         height: '22px',
@@ -28,14 +28,14 @@ const LatestProducts = () => {
             </div>
     
             {/* PRODUCTS */}
-            <div className="grid grid-cols-1 gap-14 px-4 md:grid-cols-2 lg:grid-cols-3 justify-items-center lg:gap-28 lg:px-40 py-4">
+            <div className="grid grid-cols-1 gap-8 px-4 md:grid-cols-2 lg:grid-cols-3 justify-items-center lg:gap-28 lg:px-40 py-4">
             {[
-              { src: "/image 1166 (1).png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00", width:223, height:229},
-              { src: "/image 15.png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00", width:245, height:245},
-              { src: "/image 1168.png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00", width:222, height:222},
-              { src: "/image 23.png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00", width:267, height:277},
-              { src: "/image 32.png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00", width:303, height:264},
-              { src: "/image 3 (1).png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00", width:360, height:261},
+              { src: "/image 1166 (1).png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00"},
+              { src: "/image 15.png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00"},
+              { src: "/image 1168.png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00"},
+              { src: "/image 23.png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00"},
+              { src: "/image 32.png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00"},
+              { src: "/image 3 (1).png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00"},
             ].map((products, index) => (
                 <div
                   key={index}
@@ -48,14 +48,18 @@ const LatestProducts = () => {
             }}
             >
                     {/* Image */}
-            <div className="lg:mt-24 mt-12">
+            <div className="mt-24">
               <Image
                 src={products.src}
                 alt={products.title}
-                width={products.width} 
-                height={products.height} 
+                width={285} 
+                height={220} 
                 objectFit='contain'
                 className="mx-auto"
+                style={{
+                  width: index === 0 || index === 1 || index === 2 || index === 3? '222px' : '285px', 
+                  height: index === 0 || index === 1 || index === 2 || index === 3? '222px' : '220px',
+                }}
               />
               </div>
               {index === 1 && (
@@ -103,7 +107,7 @@ const LatestProducts = () => {
               </div>
               </div>
               )}
-              <div className='flex items-center justify-between gap-8 mt-16 mb-6 lg:mb-10'>
+              <div className='flex items-center justify-between gap-8 mt-16 mb-10'>
               <p className="text-[#151875] font-semibold text-[14px]">
               {products.title}
               </p>
