@@ -28,18 +28,18 @@ const LatestProducts = () => {
             </div>
     
             {/* PRODUCTS */}
-            <div className="grid grid-cols-1 gap-8 px-4 py-8 md:grid-cols-2 lg:grid-cols-3 justify-items-center lg:gap-28 lg:px-40 lg:py-4">
+            <div className="grid grid-cols-1 gap-8 px-4 md:grid-cols-2 lg:grid-cols-3 justify-items-center lg:gap-28 lg:px-40 py-4">
             {[
-              { src: "/image 1166 (1).png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00"},
-              { src: "/image 15.png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00"},
-              { src: "/image 1168.png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00"},
-              { src: "/image 23.png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00"},
-              { src: "/image 32.png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00"},
-              { src: "/image 3 (1).png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00"},
+              { src: "/image 1166 (1).png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00", width:223, height:229},
+              { src: "/image 15.png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00", width:245, height:245},
+              { src: "/image 1168.png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00", width:222, height:222},
+              { src: "/image 23.png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00", width:267, height:277},
+              { src: "/image 32.png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00", width:303, height:264},
+              { src: "/image 3 (1).png", title: "Comfort Handy Craft", price: "$42.00", originalPrice:"$65.00", width:360, height:261},
             ].map((products, index) => (
                 <div
                   key={index}
-                  className="relative flex flex-col items-center justify-center"
+                  className="relative flex flex-col items-center justify-center gap-4"
             style={{
               width: '360px',
               height: '306px',
@@ -52,14 +52,10 @@ const LatestProducts = () => {
               <Image
                 src={products.src}
                 alt={products.title}
-                width={285} 
-                height={220} 
+                width={products.width} 
+                height={products.height} 
                 objectFit='contain'
                 className="mx-auto"
-                style={{
-                  width: index === 0 || index === 1 || index === 2 || index === 3? '222px' : '285px', 
-                  height: index === 0 || index === 1 || index === 2 || index === 3? '222px' : '220px',
-                }}
               />
               </div>
               {index === 1 && (
@@ -107,7 +103,7 @@ const LatestProducts = () => {
               </div>
               </div>
               )}
-              <div className='md:flex items-center justify-between gap-8 mt-16 mb-10'>
+              <div className='flex items-center justify-between gap-8 mt-16 mb-10'>
               <p className="text-[#151875] font-semibold text-[14px]">
               {products.title}
               </p>
