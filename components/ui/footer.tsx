@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className='max-w-[1920px] mx-auto'>
       {/* Footer Section */}
-      <footer className='h-[450px] bg-[#EEEFFB] text-[#8A8FB9]'>
+      <footer className='md:h-[450px] h-auto bg-[#EEEFFB] text-[#8A8FB9]'>
         <div className='flex flex-col lg:flex-row gap-x-20 mt-12 pt-20 pl-8 lg:pl-28'>
           
           {/* Footer Column 1: Logo, Newsletter, Contact Info */}
@@ -27,16 +27,16 @@ const Footer = () => {
                 Sign Up
               </Button>
             </div>
-            <div className='text-[16px] text-[#8A8FB9]'>
+            <div className='text-[16px] text-[#8A8FB9] sm:mb-4'>
               <p>Contact Info</p>
               <p>17 Princess Road, London, Greater London NW1 8JR, UK</p>
             </div>
           </div>
           
           {/* Footer Column 2: Categories */}
-          <div className='space-y-8'>
+          <div className='space-y-8 sm:space-x-4'>
             <h1 className='text-[22px] text-black font-semibold'>Categories</h1>
-            <ul className='text-[16px] text-[#8A8FB9] space-y-4'>
+            <ul className='text-[16px] text-[#8A8FB9] space-y-4 sm:space-y-2'>
               <li><Link href="">Laptops & Computers</Link></li>
               <li><Link href="">Cameras & Photography</Link></li>
               <li><Link href="">Smart Phones & Tablets</Link></li>
@@ -46,9 +46,9 @@ const Footer = () => {
           </div>
           
           {/* Footer Column 3: Customer Care */}
-          <div className='space-y-8'>
+          <div className='space-y-8 sm:space-y-4'>
             <h1 className='text-[22px] text-black font-semibold'>Customer Care</h1>
-            <ul className='text-[16px] text-[#8A8FB9] space-y-4'>
+            <ul className='text-[16px] text-[#8A8FB9] space-y-4 sm:space-y-2'>
               <li><Link href="">My Account</Link></li>
               <li><Link href="">Discount</Link></li>
               <li><Link href="">Returns</Link></li>
@@ -58,9 +58,9 @@ const Footer = () => {
           </div>
           
           {/* Footer Column 4: Pages */}
-          <div className='space-y-8'>
+          <div className='space-y-8 sm:space-y-4'>
             <h1 className='text-[22px] text-black font-semibold'>Pages</h1>
-            <ul className='text-[16px] text-[#8A8FB9] space-y-4'>
+            <ul className='text-[16px] text-[#8A8FB9] space-y-4 sm:space-y-2'>
               <li><Link href="">Blog</Link></li>
               <li><Link href="">Browse The Shop</Link></li>
               <li><Link href="">Category</Link></li>
@@ -79,7 +79,7 @@ const Footer = () => {
               ©Webecy - All Rights Reserved
             </p>
           </div>
-          <div className='flex items-center gap-2 mr-40'>
+          <div className='flex items-center gap-2 mr-40 sm:mr-20'>
             <p>
               <a href='https://www.facebook.com/' target='blank'>
                 <FaSquareFacebook className='text-[#151875] rounded-full text-3xl' />
