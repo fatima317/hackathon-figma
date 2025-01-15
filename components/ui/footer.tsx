@@ -1,6 +1,5 @@
 'use client';
 import { useRouter } from 'next/navigation';
-import Link from 'next/link'
 import React from 'react'
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
@@ -17,8 +16,8 @@ const Footer = () => {
           
           {/* Footer Column 1: Logo, Newsletter, Contact Info */}
           <div className='space-y-6'>
-            <h1 className='text-[38px] font-bold text-black -mt-1'>
-              <Link href="/hektoDemo">Hekto</Link>
+            <h1 className='text-[38px] font-bold text-black -mt-1' onClick={() => router.push('/hektoDemo')}>
+              Hekto
             </h1>
             <div className='relative'>
               <Input
@@ -40,11 +39,11 @@ const Footer = () => {
           <div className='md:space-y-8 sm:space-y-2'>
             <h1 className='text-[22px] text-black font-semibold'>Categories</h1>
             <ul className='text-[16px] text-[#8A8FB9] md:space-y-4 sm:space-y-2'>
-              <li><Link href="">Laptops & Computers</Link></li>
-              <li><Link href="">Cameras & Photography</Link></li>
-              <li><Link href="">Smart Phones & Tablets</Link></li>
-              <li><Link href="">Video Games & Consoles</Link></li>
-              <li><Link href="">Waterproof Headphones</Link></li>
+              <li>Laptops & Computers</li>
+              <li>Cameras & Photography</li>
+              <li>Smart Phones & Tablets</li>
+              <li>Video Games & Consoles</li>
+              <li>Waterproof Headphones</li>
             </ul>
           </div>
           
@@ -52,11 +51,11 @@ const Footer = () => {
           <div className='space-y-8 sm:space-y-4'>
             <h1 className='text-[22px] text-black font-semibold'>Customer Care</h1>
             <ul className='text-[16px] text-[#8A8FB9] space-y-4 sm:space-y-2'>
-              <li><Link href="/myAccount">My Account</Link></li>
-              <li><Link href="/productDetails">Discount</Link></li>
-              <li><Link href="">Returns</Link></li>
-              <li><Link href="">Orders History</Link></li>
-              <li><Link href="">Order Tracking</Link></li>
+              <li onClick={() => router.push('/myAccount')}>My Account</li>
+              <li onClick={() => router.push('/productDetails')}>Discount</li>
+              <li>Returns</li>
+              <li>Orders History</li>
+              <li>Order Tracking</li>
             </ul>
           </div>
           
@@ -64,12 +63,12 @@ const Footer = () => {
           <div className='space-y-8 sm:space-y-4'>
             <h1 className='text-[22px] text-black font-semibold'>Pages</h1>
             <ul className='text-[16px] text-[#8A8FB9] space-y-4 sm:space-y-2'>
-              <li><Link href="/blogPage">Blog</Link></li>
-              <li><Link href="/shopList">Browse The Shop</Link></li>
-              <li><Link href="">Category</Link></li>
-              <li><Link href="">Pre-Built Pages</Link></li>
-              <li><Link href="">Visual Composer Elements</Link></li>
-              <li><Link href="">WooCommerce Pages</Link></li>
+              <li onClick={() => router.push('/blogPage')}>Blog</li>
+              <li onClick={() => router.push('/shopList')}>Browse The Shop</li>
+              <li onClick={() => router.push('/')}>Category</li>
+              <li>Pre-Built Pages</li>
+              <li>Visual Composer Elements</li>
+              <li>WooCommerce Pages</li>
             </ul>
           </div>
           
