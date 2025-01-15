@@ -1,3 +1,5 @@
+'use client';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link'
 import React from 'react'
 import { Input } from "@/components/ui/input"
@@ -6,16 +8,17 @@ import { FaInstagramSquare, FaTwitterSquare } from 'react-icons/fa'
 import { FaSquareFacebook } from 'react-icons/fa6'
 
 const Footer = () => {
+  const router = useRouter();
   return (
     <div className='max-w-[1920px] mx-auto'>
       {/* Footer Section */}
       <footer className='md:h-[450px] h-auto bg-[#EEEFFB] text-[#8A8FB9]'>
-        <div className='flex flex-col lg:flex-row gap-x-20 mt-12 pt-20 pl-8 lg:pl-28'>
+        <div className='flex sm:flex-col sm:gap-4 md:flex-row gap-x-20 mt-12 pt-20 sm:p-4 md:pl-28'>
           
           {/* Footer Column 1: Logo, Newsletter, Contact Info */}
           <div className='space-y-6'>
             <h1 className='text-[38px] font-bold text-black -mt-1'>
-              <Link href="">Hekto</Link>
+              <Link href="/hektoDemo">Hekto</Link>
             </h1>
             <div className='relative'>
               <Input
@@ -27,16 +30,16 @@ const Footer = () => {
                 Sign Up
               </Button>
             </div>
-            <div className='text-[16px] text-[#8A8FB9] sm:mb-4'>
+            <div className='text-[16px] text-[#8A8FB9]'>
               <p>Contact Info</p>
               <p>17 Princess Road, London, Greater London NW1 8JR, UK</p>
             </div>
           </div>
           
           {/* Footer Column 2: Categories */}
-          <div className='space-y-8 sm:space-x-4'>
+          <div className='md:space-y-8 sm:space-y-2'>
             <h1 className='text-[22px] text-black font-semibold'>Categories</h1>
-            <ul className='text-[16px] text-[#8A8FB9] space-y-4 sm:space-y-2'>
+            <ul className='text-[16px] text-[#8A8FB9] md:space-y-4 sm:space-y-2'>
               <li><Link href="">Laptops & Computers</Link></li>
               <li><Link href="">Cameras & Photography</Link></li>
               <li><Link href="">Smart Phones & Tablets</Link></li>
@@ -49,8 +52,8 @@ const Footer = () => {
           <div className='space-y-8 sm:space-y-4'>
             <h1 className='text-[22px] text-black font-semibold'>Customer Care</h1>
             <ul className='text-[16px] text-[#8A8FB9] space-y-4 sm:space-y-2'>
-              <li><Link href="">My Account</Link></li>
-              <li><Link href="">Discount</Link></li>
+              <li><Link href="/myAccount">My Account</Link></li>
+              <li><Link href="/productDetails">Discount</Link></li>
               <li><Link href="">Returns</Link></li>
               <li><Link href="">Orders History</Link></li>
               <li><Link href="">Order Tracking</Link></li>
@@ -61,8 +64,8 @@ const Footer = () => {
           <div className='space-y-8 sm:space-y-4'>
             <h1 className='text-[22px] text-black font-semibold'>Pages</h1>
             <ul className='text-[16px] text-[#8A8FB9] space-y-4 sm:space-y-2'>
-              <li><Link href="">Blog</Link></li>
-              <li><Link href="">Browse The Shop</Link></li>
+              <li><Link href="/blogPage">Blog</Link></li>
+              <li><Link href="/shopList">Browse The Shop</Link></li>
               <li><Link href="">Category</Link></li>
               <li><Link href="">Pre-Built Pages</Link></li>
               <li><Link href="">Visual Composer Elements</Link></li>
