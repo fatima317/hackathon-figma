@@ -5,7 +5,7 @@ import { Button } from './button';
 const MiddleThree = () => {
   return (
     <div className='max-w-full mx-auto bg-white py-8 relative'>
-        <div className='relative w-full h-auto'>
+        <div className='relative w-full h-full'>
           {/* Background Image */}
           <Image 
             src={"/Rectangle 102.png"}
@@ -23,7 +23,7 @@ const MiddleThree = () => {
             </h3>
             
             {/* Button */}
-            <Button className="bg-brandPrimary1 text-white font-medium text-sm rounded shadow-sm hover:bg-pink-600 transition-all duration-300 mb-6" style={{ width: "173px", height: "49px" }}>
+            <Button className="bg-brandPrimary1 text-white font-medium text-sm rounded shadow-sm hover:bg-pink-600 transition-all duration-300 mb-8" style={{ width: "173px", height: "49px" }}>
               Shop Now
             </Button>
           </div>
