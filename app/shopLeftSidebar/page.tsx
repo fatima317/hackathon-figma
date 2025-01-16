@@ -33,7 +33,7 @@ const ShopLeftSidebar = () => {
        <div className='max-w-[1171px] mx-auto md:ml-14 flex flex-col md:flex-row md:justify-between pt-20 pb-10 px-4 md:px-16'>
            {/* Title and Results */}
           <div>
-          <h3 className='font-bold text-[22px] text-brandPrimary2'>Ecommerce Acceories & Fashion item</h3>
+          <h3 className='font-bold text-[22px] text-brandPrimary2 tracking-tight'>Ecommerce Accessories & Fashion item</h3>
           <p className='text-brandPrimary3 text-sm font-normal'>About 9,620 results (0.62 seconds)</p>
           </div>
           {/* Filters */}
@@ -260,7 +260,7 @@ const ShopLeftSidebar = () => {
         ].map((products, index) => (
           <div
             key={index}
-            className="relative flex flex-row items-center gap-5 px-4 pt-10 shadow-sm"
+            className="relative flex flex-col md:flex-row items-center gap-5 px-4 pt-10 shadow-sm"
             style={{width:"921px", height:"230px"}}>
             
 

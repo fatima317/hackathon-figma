@@ -58,7 +58,7 @@ const FAQ = () => {
 
         {/* Ask a Question Section */}
         <div className='max-w-[90%] md:max-w-[566px] bg-[#F8F8FD] flex flex-col mx-auto py-6 px-6 md:pl-10 md:pr-16 '>
-          <h3 className='text-[20px] md:text-[24px] font-bold text-[#1D3178]  mb-16 md:mb-28 mt-6'>Ask a Question</h3>
+          <h3 className='text-[20px] md:text-[24px] font-bold text-[#1D3178] mb-16 md:mb-28 mt-6'>Ask a Question</h3>
           <Input placeholder='Your Name' className='mb-10 bg-white md:w-[445px] md:h-[50px]' type='text'/>
           <Input placeholder='Subject' className='mb-10 bg-white md:w-[445px] md:h-[50px]' type='text'/>
           <Input placeholder='Type Your Message' className='mb-10 bg-white md:w-[445px] md:h-[157px]' type='text'/>

@@ -107,9 +107,7 @@ const SingleBlog = () => {
             ].map((products, index) => (
               <div
                key={index}
-               className="flex flex-col items-center px-3"
-               style={{width:'209.54px', height:'319.53'}}
-               >
+               className="flex flex-col items-center px-3 md:w-[209.54px] md:h-[319.53]">
                 <div className='my-4'>
                 <Image
                 src={products.src}
