@@ -30,7 +30,7 @@ const MyAccount = () => {
         <div className='lg:max-w-[544px] max-w-full flex flex-col justify-center mx-auto py-20 items-center'>
           <h3 className='text-black font-bold text-2xl lg:text-[32px] text-center mb-2'>Login</h3>
           <p className='text-brandPrimary3 text-sm lg:text-[17px] font-medium text-center mb-8'>Please login using account detail below.</p>
-          <Input placeholder='Email Address' type='text' className='mb-6 w-full' style={{ width: "432px", height: "57px" }} />
+          <Input placeholder='Email Address' type='text' className='mb-6 w-auto md:w-[432px] md:h-[57px] h-auto'/>
           <Input placeholder='Password'type='text' className='mb-6' style={{ width: "432px", height: "57px" }}/>
           <p className='text-brandPrimary3 text-sm lg:text-[17px] font-medium mr-60 mb-2'>Forgot your password?</p>
           <Button  className="bg-brandPrimary1 text-white font-medium text-[14px] md:text-[16px] rounded shadow-sm hover:bg-pink-600 transition-all duration-300"
