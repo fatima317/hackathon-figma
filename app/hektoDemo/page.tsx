@@ -55,11 +55,11 @@ const HektoDemo = () => {
             <h3 className='text-sm md:text-[18px] text-brandPrimary2 font-bold my-8'>Shipping address</h3>
             <div className='flex flex-col'>
               <div className='flex flex-col md:flex-row justify-between my-4'>
-              <div className="w-full md:w-[40%]">
+              <div className="w-full md:w-[45%]">
               <p className='text-[#C1C8E1] text-xs md:text-[14px] font-medium md:mb-2'>First name (optional)</p>
               <Image src={"/Line 15.png"} alt='line' width={336} height={0} className="w-full"/>
               </div>
-              <div className="w-full md:w-[40%] mt-6 md:mt-0">
+              <div className="w-full md:w-[45%] mt-6 md:mt-0">
               <p className='text-[#C1C8E1] text-xs md:text-[14px] font-medium md:mb-2'>Last name</p>
               <Image src={"/Line 15.png"} alt='line' width={336} height={0} className="w-full"/>
               </div>
@@ -88,7 +88,7 @@ const HektoDemo = () => {
               <p className='text-[#C1C8E1] text-xs md:text-[14px] font-medium md:mb-2'>Bangladesh</p>
               <Image src={"/Line 15.png"} alt='line' width={336} height={0} className="w-full"/>
               </div>
-              <div>
+              <div className="w-full md:w-[40%] mt-6 md:mt-0">
               <p className='text-[#C1C8E1] text-xs md:text-[14px] font-medium md:mb-2'>Postal Code</p>
               <Image src={"/Line 15.png"} alt='line' width={336} height={0} className="w-full"/>
               </div>

@@ -160,7 +160,7 @@ const Navbar = () => {
                     <ChevronDown className="w-5 h-4 cursor-pointer" onClick={() => setShowPageDropdown(!showPageDropdown)}/>
                     {showPageDropdown && (
                    <div className="absolute top-full mt-2 ml-14 px-2 bg-slate-100 w-40 shadow-lg rounded-none">
-                    <Link href={"/shoppingCurt"} className='block text-sm font-medium mb-2'> Shopping Cart</Link>
+                    <Link href={"/shoppingCurt"} className='block text-sm font-medium mb-2 mt-2'> Shopping Cart</Link>
                     <Link href={"/orderCompleted"} className='block text-sm font-medium mb-2'>Order Completed</Link>
                     <Link href={"/shopList"} className='block text-sm font-medium mb-2'> Shop List</Link>
                     <Link href={"/shopLeftSidebar"} className='block text-sm font-medium mb-2'> Shop Left Sidebar</Link>

@@ -32,7 +32,7 @@ const ShopList = () => {
        <div className='max-w-[1171px] mx-auto md:ml-14 flex flex-col md:flex-row md:justify-between pt-20 pb-10 px-4 md:px-16'>
            {/* Title and Results */}
           <div>
-          <h3 className='font-bold text-[22px] text-brandPrimary2'>Ecommerce Acceories & Fashion item</h3>
+          <h3 className='font-bold text-[22px] text-brandPrimary2 tracking-tight'>Ecommerce Accessories & Fashion item</h3>
           <p className='text-brandPrimary3 text-sm font-normal'>About 9,620 results (0.62 seconds)</p>
           </div>
           {/* Filters */}
@@ -66,7 +66,7 @@ const ShopList = () => {
         ].map((products, index) => (
           <div
             key={index}
-            className="relative flex flex-row items-center gap-4 md:gap-8 p-4 shadow-sm">
+            className="relative flex flex-col md:flex-row items-center gap-4 md:gap-8 p-4 shadow-sm">
             {/* Image */}
          <div>
          <Image
@@ -74,14 +74,14 @@ const ShopList = () => {
          alt={products.title}
          width={313.63}
          height={217.56}
-         className="object-contain" 
+         className="object-contain w-full" 
          />
          </div>
         {/* Product Details */}
         <div className="max-w-[591px] flex flex-col">
           {/* Product Title and Colors */}
         <div className='flex flex-wrap gap-4 mb-2'>
-        <h3 className="text-[#151875] font-bold text-[19px]">{products.title}</h3>
+        <h3 className="text-[#151875] font-bold text-[16px] md:text-[19px]">{products.title}</h3>
         <div className='flex flex-wrap gap-1'>
         <Circle className='w-3 h-7 stroke-[#DE9034] fill-[#DE9034]'/>
         <Circle className='w-3 h-7 stroke-[#E60584] fill-[#E60584]'/>
@@ -89,9 +89,9 @@ const ShopList = () => {
         </div>
         </div>
         {/* Price and Ratings */}
-        <div className='flex flex-wrap gap-4 mb-4'>
-              <span className='text-[#151875] font-medium text-[15px]'>{products.discount}</span>
-              <span className='text-[#FB2448] font-medium text-[15px] line-through'>{products.price}</span>
+        <div className='flex flex-wrap gap-4 mb-2 md:mb-4'>
+              <span className='text-[#151875] font-medium text-xs md:text-[15px]'>{products.discount}</span>
+              <span className='text-[#FB2448] font-medium text-xs md:text-[15px] line-through'>{products.price}</span>
               <div className='flex flex-wrap gap-1'>
               <Star className='w-4 h-5 stroke-transparent fill-[#FFC416]' />
               <Star className='w-4 h-5 stroke-transparent fill-[#FFC416]' />
@@ -100,7 +100,7 @@ const ShopList = () => {
               <Star className='w-4 h-5 stroke-transparent fill-[#B2B2B2]' />
               </div>
       </div>
-      <p className='text-brandPrimary3 text-[17px] font-medium mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
+      <p className='text-brandPrimary3 text-sm md:text-[17px] font-medium mb-2 md:mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
       <div className='flex gap-10 mt-2'>
       <Button
                  size="icon" variant="secondary" className='rounded-full bg-white'

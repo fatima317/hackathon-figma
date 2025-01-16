@@ -260,7 +260,7 @@ const ShopLeftSidebar = () => {
         ].map((products, index) => (
           <div
             key={index}
-            className="relative flex flex-col md:flex-row items-center gap-5 px-4 pt-10 shadow-sm md:w-[921px] md:h-[230px]">
+            className="relative flex flex-col md:flex-row items-center p-4 md:gap-5 md:px-4 md:pt-10 shadow-sm md:w-[921px] md:h-[230px]">
             
           {/* Image */}
          <div>
@@ -273,7 +273,7 @@ const ShopLeftSidebar = () => {
          />
          </div>
         {/* Product Details */}
-        <div className="max-w-[591px] flex flex-col">
+        <div className="max-w-[591px] flex flex-col sm:items-center">
           {/* Product Title and Colors */}
         <div className='flex flex-wrap gap-4 mb-2'>
         <h3 className="text-[#151875] font-bold text-[18px]">{products.title}</h3>
