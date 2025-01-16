@@ -38,29 +38,29 @@ const HektoDemo = () => {
         <div className='w-full md:w-[60%] md:max-w-[770px] bg-[#F8F8FD]'>
           <div className='flex flex-col px-4 md:px-8 py-10'>
             <div className='flex justify-between'>
-            <h3 className='text-[18px] text-brandPrimary2 font-bold mb-8'>Contact Information</h3>
+            <h3 className='text-sm md:text-[18px] text-brandPrimary2 font-bold mb-8'>Contact Information</h3>
             <div className='flex gap-1 mb-8'>
-            <p className='text-[#C1C8E1] text-[14px] font-medium'>Already have an account?</p>
-            <p className='text-[#C1C8E1] text-[14px] font-medium'>Log in</p>
+            <p className='text-[#C1C8E1] text-xs md:text-[14px] font-medium'>Already have an account?</p>
+            <p className='text-[#C1C8E1] text-xs md:text-[14px] font-medium'>Log in</p>
             </div>
             </div>
             {/* Input Field */}
-            <p className='text-[#C1C8E1] text-[14px] font-semibold mb-2'>Email or mobile phone number</p>
+            <p className='text-[#C1C8E1] text-xs md:text-[14px] font-semibold md:mb-2'>Email or mobile phone number</p>
             <Image src={"/Line 14.png"} alt='line' width={698} height={0} className="w-full"/>
             <div className='flex gap-2 my-8 items-center'>
               <Check className='bg-[#19D16F] stroke-white w-3 h-3'/>
               <p className='text-brandPrimary3 text-[12px] font-medium'>Keep me up to date on news and excluive offers</p>
             </div>
             {/* Shipping Address */}
-            <h3 className='text-[18px] text-brandPrimary2 font-bold my-8'>Shipping address</h3>
+            <h3 className='text-sm md:text-[18px] text-brandPrimary2 font-bold my-8'>Shipping address</h3>
             <div className='flex flex-col'>
               <div className='flex flex-col md:flex-row justify-between my-4'>
               <div className="w-full md:w-[50%]">
-              <p className='text-[#C1C8E1] text-[14px] font-medium mb-2'>First name (optional)</p>
+              <p className='text-[#C1C8E1] text-xs md:text-[14px] font-medium md:mb-2'>First name (optional)</p>
               <Image src={"/Line 15.png"} alt='line' width={336} height={0} className="w-full"/>
               </div>
               <div className="w-full md:w-[50%] mt-4 md:mt-0">
-              <p className='text-[#C1C8E1] text-[14px] font-medium mb-2'>Last name</p>
+              <p className='text-[#C1C8E1] text-xs md:text-[14px] font-medium md:mb-2'>Last name</p>
               <Image src={"/Line 15.png"} alt='line' width={336} height={0} className="w-full"/>
               </div>
               </div>
@@ -71,7 +71,7 @@ const HektoDemo = () => {
                   { label: "City", src: "/Line 14.png" },
                 ].map((field, index) => (
                   <div key={index} className="my-4">
-                    <p className="text-[#C1C8E1] text-[14px] font-medium mb-2">
+                    <p className="text-[#C1C8E1] text-xs md:text-[14px] font-medium md:mb-2">
                       {field.label}
                     </p>
                     <Image
@@ -83,13 +83,13 @@ const HektoDemo = () => {
                   </div>
                 ))}
                 {/* Country and Postal Code */}
-              <div className='flex flex-col md:flex-row justify-between my-4'>
+              <div className='flex flex-col md:flex-row justify-between md:my-4'>
               <div className="w-full md:w-[40%]">
-              <p className='text-[#C1C8E1] text-[14px] font-medium mb-2'>Bangladesh</p>
+              <p className='text-[#C1C8E1] text-xs md:text-[14px] font-medium md:mb-2'>Bangladesh</p>
               <Image src={"/Line 15.png"} alt='line' width={336} height={0} className="w-full"/>
               </div>
               <div>
-              <p className='text-[#C1C8E1] text-[14px] font-medium mb-2'>Postal Code</p>
+              <p className='text-[#C1C8E1] :text-[14px] font-medium md:mb-2'>Postal Code</p>
               <Image src={"/Line 15.png"} alt='line' width={336} height={0} className="w-full"/>
               </div>
               </div>
@@ -154,8 +154,7 @@ const HektoDemo = () => {
                 <p className='text-brandPrimary3 font-medium text-[12px]'>Shipping & taxes calculated at checkout</p>
                 </div>
                 <div className='my-5'>
-                <Button className='bg-[#19D16F] text-white text-[14px] font-bold hover:bg-green-400 transition-all duration-300' 
-                style={{width:"312px", height:"40px"}}>
+                <Button className='bg-[#19D16F] text-white text-[14px] font-bold hover:bg-green-400 transition-all duration-300 md:w-[312px] md:h-[40px]'>
                 Proceed To Checkout
                 </Button>
                 </div>
