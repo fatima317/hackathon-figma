@@ -75,7 +75,7 @@ const Footer = () => {
         </div>
         
         {/* Footer Bottom: Social Media and Copyright */}
-        <div className='max-w-[1920px] mx-auto bg-[#E7E4F8] flex items-center justify-between p-4 mt-20'>
+        <div className='max-w-[1920px] mx-auto bg-[#E7E4F8] flex items-center justify-between p-4 mt-10'>
           <div className='flex items-center justify-center'>
             <p className='text-xs text-[#9DA0AE] ml-8 md:ml-32'>
               ©Webecy - All Rights Reserved
