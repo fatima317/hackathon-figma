@@ -46,7 +46,7 @@ const ShoppingCurt = () => {
         ].map((products, index) => (
            <div
              key={index}
-             className="relative flex sm:flex-col md:flex-row items-center gap-4 shadow-sm py-4">
+             className="relative flex flex-col md:flex-row items-center gap-4 shadow-sm py-4">
              {/* Product Image */}
             <div className='relative'>
             <GrClose className='bg-black stroke-white rounded-full md:ml-16 -mt-2 px-1 w-5 h-5 absolute' />
@@ -94,7 +94,7 @@ const ShoppingCurt = () => {
             </div>
             </div>
           </div>
-            <div className='max-w-[371px] bg-white'>
+            <div className='max-w-[371px] bg-white mb-6'>
               {/* Cart Totals Section */}
               <h3 className='text-brandPrimary2 text-[20px] font-bold md:ml-24 py-4'>Cart Totals</h3>
               <div className='bg-[#E8E6F1] flex flex-col px-6 py-6'>
