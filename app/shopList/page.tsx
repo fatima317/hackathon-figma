@@ -100,7 +100,7 @@ const ShopList = () => {
               <Star className='w-4 h-5 stroke-transparent fill-[#B2B2B2]' />
               </div>
       </div>
-      <p className='text-brandPrimary3 text-sm md:text-[17px] font-medium mb-2 md:mb-4 text-center md:text-left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
+      <p className='text-brandPrimary3 text-sm md:text-[17px] font-medium mb-2 md:mb-4 text-center md:text-left px-2 md:px-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
       <div className='flex gap-10 mt-2'>
       <Button
                  size="icon" variant="secondary" className='rounded-full bg-white'

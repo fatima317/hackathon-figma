@@ -173,7 +173,7 @@ const Navbar = () => {
                     <Link href={"/contactUs"} className='text-sm font-medium'>Contact</Link>
                     <Link href={"/aboutUs"} className='text-sm font-medium'> About Us</Link>
                     <Link href={"/faq"} className='text-sm font-medium'>FAQ</Link>
-                <div className='mt-8'>
+                <div className='mt-12'>
                 <div className='relative'>
                 <Input 
                 placeholder='What are you looking for? ' 
