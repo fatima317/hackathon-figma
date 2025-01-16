@@ -30,7 +30,7 @@ const ShoppingCurt = () => {
         {/* Table Headers */}
       <div className='flex flex-wrap gap-4 md:gap-20 md:ml-32 mb-8'>
         <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold'>Product</h3>
-        <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold ml-28'>Price</h3>
+        <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold md:ml-28 ml-32 '>Price</h3>
         <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold'>Quantity</h3>
         <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold'>Total</h3>
       </div>

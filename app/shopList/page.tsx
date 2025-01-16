@@ -78,7 +78,7 @@ const ShopList = () => {
          />
          </div>
         {/* Product Details */}
-        <div className="max-w-[591px] flex flex-col">
+        <div className="max-w-[591px] flex flex-col items-center md:items-start">
           {/* Product Title and Colors */}
         <div className='flex flex-wrap gap-4 mb-2'>
         <h3 className="text-[#151875] font-bold text-[16px] md:text-[19px]">{products.title}</h3>
@@ -100,7 +100,7 @@ const ShopList = () => {
               <Star className='w-4 h-5 stroke-transparent fill-[#B2B2B2]' />
               </div>
       </div>
-      <p className='text-brandPrimary3 text-sm md:text-[17px] font-medium mb-2 md:mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
+      <p className='text-brandPrimary3 text-sm md:text-[17px] font-medium mb-2 md:mb-4 text-center md:text-left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
       <div className='flex gap-10 mt-2'>
       <Button
                  size="icon" variant="secondary" className='rounded-full bg-white'
