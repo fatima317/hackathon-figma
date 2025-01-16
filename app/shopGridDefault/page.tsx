@@ -32,11 +32,11 @@ const ShopGridDefault = () => {
         <div className='max-w-[1171px] mx-auto md:ml-14 flex flex-col md:flex-row md:justify-between pt-20 pb-10 px-4 md:px-16'>
            {/* Title and Results */}
           <div>
-          <h3 className='font-bold text-[22px] text-brandPrimary2'>Ecommerce Accessories & Fashion item</h3>
+          <h3 className='font-bold text-[18px] md:text-[22px] text-brandPrimary2'>Ecommerce Accessories & Fashion item</h3>
           <p className='text-brandPrimary3 text-sm font-normal'>About 9,620 results (0.62 seconds)</p>
           </div>
           {/* Filters */}
-          <div className='flex flex-wrap gap-4 md:gap-6 items-center'>
+          <div className='flex flex-wrap gap-4 md:gap-8 items-center'>
           <div className='flex items-center gap-2'>
             <span className='text-[#3F509E] text-[16px] font-medium'>Per Page:</span>
             <span><Input type='text' className='w-[55px] h-[25px] rounded-none' /></span>
