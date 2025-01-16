@@ -96,7 +96,7 @@ const ShoppingCurt = () => {
           </div>
             <div className='max-w-[371px] bg-white'>
               {/* Cart Totals Section */}
-              <h3 className='text-brandPrimary2 text-[20px] font-bold md:ml-24 py-4 -mt-16'>Cart Totals</h3>
+              <h3 className='text-brandPrimary2 text-[20px] font-bold md:ml-24 py-4 -mt-20'>Cart Totals</h3>
               <div className='bg-[#E8E6F1] flex flex-col px-6 py-6'>
                 <div className='flex flex-wrap justify-between shadow-sm pt-8 pb-2'>
                 <p className='text-brandPrimary2 font-semibold text-[18px]'>Subtotals:</p>

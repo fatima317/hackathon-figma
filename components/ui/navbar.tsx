@@ -159,13 +159,13 @@ const Navbar = () => {
                     <p onClick={() => router.push('/notFound')} className="text-sm font-medium cursor-pointer">Pages</p>
                     <ChevronDown className="w-5 h-4 cursor-pointer" onClick={() => setShowPageDropdown(!showPageDropdown)}/>
                     {showPageDropdown && (
-                   <div className="absolute top-full mt-1 ml-14 bg-slate-100 w-40 shadow-lg rounded-none">
-                    <Link href={"/shoppingCurt"} className='block text-sm font-medium mb-1'> Shopping Cart</Link>
-                    <Link href={"/orderCompleted"} className='block text-sm font-medium mb-1'>Order Completed</Link>
-                    <Link href={"/shopList"} className='block text-sm font-medium mb-1'> Shop List</Link>
-                    <Link href={"/shopLeftSidebar"} className='block text-sm font-medium mb-1'> Shop Left Sidebar</Link>
-                    <Link href={"/singleBlog"} className='block text-sm font-medium mb-1'> Single Blog</Link>
-                    <Link href={"/hektoDemo"} className='block text-sm font-medium mb-1'> Hekto Demo</Link>
+                   <div className="absolute top-full mt-2 ml-14 px-2 bg-slate-100 w-40 shadow-lg rounded-none">
+                    <Link href={"/shoppingCurt"} className='block text-sm font-medium mb-2'> Shopping Cart</Link>
+                    <Link href={"/orderCompleted"} className='block text-sm font-medium mb-2'>Order Completed</Link>
+                    <Link href={"/shopList"} className='block text-sm font-medium mb-2'> Shop List</Link>
+                    <Link href={"/shopLeftSidebar"} className='block text-sm font-medium mb-2'> Shop Left Sidebar</Link>
+                    <Link href={"/singleBlog"} className='block text-sm font-medium mb-2'> Single Blog</Link>
+                    <Link href={"/hektoDemo"} className='block text-sm font-medium mb-2'> Hekto Demo</Link>
                    </div>
                     )}
                     </div>

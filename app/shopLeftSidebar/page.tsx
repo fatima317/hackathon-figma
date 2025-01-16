@@ -260,10 +260,8 @@ const ShopLeftSidebar = () => {
         ].map((products, index) => (
           <div
             key={index}
-            className="relative flex flex-col md:flex-row items-center gap-5 px-4 pt-10 shadow-sm"
-            style={{width:"921px", height:"230px"}}>
+            className="relative flex flex-col md:flex-row items-center gap-5 px-4 pt-10 shadow-sm md:w-[921px] md:h-[230px]">
             
-
           {/* Image */}
          <div>
          <Image
