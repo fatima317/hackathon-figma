@@ -46,7 +46,7 @@ const ShoppingCurt = () => {
         ].map((products, index) => (
            <div
              key={index}
-             className="relative flex flex-row items-center gap-2 md:gap-4 shadow-sm py-4">
+             className="relative flex flex-row items-center gap-4 shadow-sm py-4">
              {/* Product Image */}
             <div className='relative'>
             <GrClose className='bg-black stroke-white rounded-full md:ml-16 -mt-2 px-1 w-5 h-5 absolute' />
@@ -65,7 +65,7 @@ const ShoppingCurt = () => {
             </div>
             {/* Product Price */}
             <div>
-              <p className='text-brandPrimary2 font-medium text-xs md:text-[14px] md:ml-9 -ml-1'>$32.00</p>
+              <p className='text-brandPrimary2 font-medium text-xs md:text-[14px] md:ml-9 -ml-2'>$32.00</p>
             </div>
             {/* Quantity Selector */}
             <div className='md:ml-20'>
@@ -78,7 +78,7 @@ const ShoppingCurt = () => {
             </div>
             {/* Total Price */}
             <div>
-              <p className='text-[#15245E] font-medium text-xs md:text-[14px] md:ml-20 mr-1'>£219.00</p>
+              <p className='text-[#15245E] font-medium text-xs md:text-[14px] md:ml-20'>£219.00</p>
             </div>
             </div>
             ))}
@@ -96,7 +96,7 @@ const ShoppingCurt = () => {
           </div>
             <div className='max-w-[371px] bg-white'>
               {/* Cart Totals Section */}
-              <h3 className='text-brandPrimary2 text-[20px] font-bold md:ml-24 py-4 -mt-8'>Cart Totals</h3>
+              <h3 className='text-brandPrimary2 text-[20px] font-bold md:ml-24 py-4 -mt-16'>Cart Totals</h3>
               <div className='bg-[#E8E6F1] flex flex-col px-6 py-6'>
                 <div className='flex flex-wrap justify-between shadow-sm pt-8 pb-2'>
                 <p className='text-brandPrimary2 font-semibold text-[18px]'>Subtotals:</p>

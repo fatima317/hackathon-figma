@@ -83,7 +83,7 @@ const HektoDemo = () => {
                   </div>
                 ))}
                 {/* Country and Postal Code */}
-              <div className='flex md:flex-row justify-between my-4'>
+              <div className='md:flex md:flex-row justify-between my-4'>
               <div className="w-full md:w-[40%]">
               <p className='text-[#C1C8E1] text-xs md:text-[14px] font-medium md:mb-2'>Bangladesh</p>
               <Image src={"/Line 15.png"} alt='line' width={336} height={0} className="w-full"/>
