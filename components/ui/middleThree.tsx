@@ -12,14 +12,13 @@ const MiddleThree = () => {
             alt={"background"}
             width={1920}
             height={462}
-            layout="responsive"
             objectFit="cover"
           />
           
           {/* Centered Content */}
           <div className='absolute inset-0 flex flex-col items-center justify-center px-6 md:px-24 lg:px-48'>
             {/* Heading */}
-            <h3 className='text-brandPrimary2 text-2xl md:text-[35px] font-bold text-center mb-3 mt-20 max-w-[574px] mx-auto'>
+            <h3 className='text-brandPrimary2 text-xl md:text-[35px] font-bold text-center mb-3 mt-20 md:max-w-[574px] mx-auto'>
               Get Latest Update By Subscribe Our Newsletter
             </h3>
             
