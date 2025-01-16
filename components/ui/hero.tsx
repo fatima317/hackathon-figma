@@ -18,7 +18,7 @@ const Hero = () => {
       </div>
 
       {/* Center Column: Content (Title, Description, Button) */}
-      <div className="md:w-[44%] md:max-w-[644px] text-center flex flex-col md:items-start items-center justify-center py-6">
+      <div className="md:w-[44%] md:max-w-[644px] text-center md:text-left flex flex-col justify-center py-6">
         <p className="text-[16px] text-pink-500 font-medium">
           Best Furniture For Your Castle...
         </p>
