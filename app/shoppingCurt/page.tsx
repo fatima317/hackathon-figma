@@ -28,9 +28,9 @@ const ShoppingCurt = () => {
        {/* Cart Items Section */}
       <div className='py-10 px-2 md:py-20'>
         {/* Table Headers */}
-      <div className='flex flex-wrap gap-6 md:gap-20 md:ml-32 mb-8'>
+      <div className='flex flex-wrap gap-4 md:gap-20 md:ml-32 mb-8'>
         <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold'>Product</h3>
-        <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold md:ml-28 ml-20'>Price</h3>
+        <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold md:ml-28 ml-24'>Price</h3>
         <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold'>Quantity</h3>
         <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold'>Total</h3>
       </div>
@@ -58,7 +58,7 @@ const ShoppingCurt = () => {
             />
             </div>
             {/* Product Details */}
-            <div className='md:flex flex-col'>
+            <div className='flex flex-wrap md:flex-col'>
             <h3 className='text-black font-medium text-xs md:text-[14px]'>{products.title}</h3>
             <p className='text-brandPrimary3 font-medium text-xs md:text-[14px]'>{products.description1}</p>
             <p className='text-brandPrimary3 font-medium text-xs md:text-[14px]'>{products.description2}</p>
@@ -94,7 +94,7 @@ const ShoppingCurt = () => {
             </div>
             </div>
           </div>
-            <div className='max-w-[371px] bg-white mb-6'>
+            <div className='max-w-[371px] bg-white mb-12'>
               {/* Cart Totals Section */}
               <h3 className='text-brandPrimary2 text-[20px] font-bold md:ml-24 py-4'>Cart Totals</h3>
               <div className='bg-[#E8E6F1] flex flex-col px-6 py-6'>
