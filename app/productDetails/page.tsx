@@ -28,7 +28,7 @@ const ProductDetails = () => {
         {/* Product Details Section */}
         <div className='max-w-[1170px] bg-white flex flex-wrap shadow-2xl mx-4 md:mx-10 lg:mx-28 my-10'>
            {/* Side Images */}
-          <div className='lg:hidden flex flex-col gap-3 p-2'>
+          <div className='flex flex-col gap-3 p-2'>
             {[
               {src: "/Rectangle 134.png" },
               {src: "/Rectangle 136.png" },

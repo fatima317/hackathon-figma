@@ -53,7 +53,7 @@ const DiscountItem = () => {
             </p>
           ))}
           </div>
-          <Button className="bg-brandPrimary1 text-white font-medium text-sm rounded shadow-sm hover:bg-pink-600 transition-all duration-300" style={{ width: "200px", height: "57px" }}>Shop Now</Button>
+          <Button className="bg-brandPrimary1 text-white font-medium text-sm rounded shadow-sm hover:bg-pink-600 transition-all duration-300 md:w-[200px] md:h-[57px]">Shop Now</Button>
         </div>
 
         {/* Image on the Right */}

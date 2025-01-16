@@ -30,8 +30,9 @@ const Hero = () => {
           adipiscing in phasellus non in justo.
         </p>
         <div className="mt-4 md:mt-8">
-          <Button className="bg-brandPrimary1 text-white font-semibold text-sm md:text-[17px] rounded shadow-sm hover:bg-pink-600 transition-all duration-300" 
-          style={{ width: "163px", height: "50px" }}>Shop Now</Button>
+          <Button className="bg-brandPrimary1 text-white font-semibold text-sm md:text-[17px] rounded shadow-sm hover:bg-pink-600 transition-all duration-300 md:w-[163px] md:h-[50px]">
+            Shop Now
+          </Button>
         </div>
       </div>
       {/* Right Column: Chair Image */}

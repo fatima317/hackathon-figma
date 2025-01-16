@@ -26,7 +26,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-        <div className="max-w-[1191px] h-[490px] mx-auto grid grid-cols-1 md:grid-cols-2 py-10 gap-4 px-7">
+        <div className="max-w-[1191px] md:h-[490px] mx-auto grid md:grid-cols-2 py-10 gap-4 px-7">
           {/* Information About Us */}
           <div className="flex flex-col items-start mt-4">
             <h2 className="text-[#101750] text-[28px] md:text-[36px] font-bold mb-4">Information About us</h2>
@@ -44,7 +44,7 @@ const ContactUs = () => {
 
           {/* Contact Way */}
           <div className="mt-4 ml-16">
-            <h2 className="text-[#101750] text-[36px] font-bold mb-6">Contact Way</h2>
+            <h2 className="text-[#101750] text-[28px] md:text-[36px] font-bold mb-6">Contact Way</h2>
             <div className="flex flex-wrap max-w-[489px] items-start gap-6">
               <div className="flex flex-wrap gap-2 mb-6">
                 <Circle className="fill-[#5625DF] w-[45px] h-[45px] stroke-none" />
@@ -79,43 +79,43 @@ const ContactUs = () => {
 
           {/* Get In Touch */}
           <div className="md:col-span-2 mt-16">
-            <h2 className="text-[#101750]  text-[28px] md:text-[36px] font-bold">Get In Touch</h2>
+            <h2 className="text-[#101750] text-[28px] md:text-[36px] font-bold">Get In Touch</h2>
             <p className="text-[14px] font-semibold text-brandPrimary3 max-w-[550px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis neque ultrices tristique amet erat vitae
               eget dolor los vitae lobortis quis bibendum quam.
             </p>
           </div>
         </div>
-        <div className='flex gap-2'>
+        <div className='md:flex gap-2'>
           {/* Contact Form */}
         <div className='max-w-[534px] flex flex-col ml-24 items-start py-10'>
           <div className='flex flex-wrap gap-2 mb-6'>
           <Input
           type='text'
           placeholder='Your Name*'
-          className='w-full md:w-[220px] h-[45px]'
+          className='md:w-[220px] md:h-[45px]'
            />
            <Input
           type='email'
           placeholder='Your E-mail'
-          className='w-full md:w-[220px] h-[45px]'
+          className='md:w-[220px] md:h-[45px]'
            />
           </div>
           <Input
           type='textarea'
           placeholder='Subject*'
-          className='w-full h-[45px] mb-6'
+          className='md:h-[45px] mb-6'
            />
             <Input
           type='textarea'
           placeholder='Type Your Messege*'
-          className='w-full h-[116px] mb-6'
+          className='md:h-[116px] mb-6'
            />
           <Button  className="bg-brandPrimary1 text-white font-medium text-[16px] rounded shadow-sm hover:bg-pink-600 transition-all duration-300" 
           style={{ width: "157px", height: "44px" }}>Send Mail</Button>
         </div>
          {/* Image Section */}
-          <div className='-mt-36 px-8 mb-40'>
+          <div className='md:-mt-36 px-8 md:mb-40'>
           <Image
           src={"/Group 124.png"}
           alt='picture'
