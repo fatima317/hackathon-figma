@@ -28,7 +28,7 @@ const ProductDetails = () => {
         {/* Product Details Section */}
         <div className='max-w-[1170px] bg-white flex flex-wrap shadow-2xl mx-4 md:mx-10 lg:mx-28 my-10'>
            {/* Side Images */}
-          <div className='flex flex-col gap-3 p-2'>
+          <div className='sm:hidden flex flex-col gap-3 p-2'>
             {[
               {src: "/Rectangle 134.png" },
               {src: "/Rectangle 136.png" },
@@ -60,7 +60,7 @@ const ProductDetails = () => {
          />
           </div>
           {/* Product Info */}
-          <div className='md:max-w-[549px] w-full mx-auto flex flex-col py-20'>
+          <div className='md:max-w-[549px] w-full md:mx-auto flex flex-col py-20 mx-4'>
             <h2 className="text-[24px] md:text-[36px] font-semibold text-[#0D134E] mt-4">Playwood arm chair</h2>
             <div className='flex gap-1 mt-2'>
               <Star className='w-4 h-5 stroke-transparent fill-[#FFC416]' />
@@ -94,7 +94,7 @@ const ProductDetails = () => {
         </div>
         {/* Description Section */}
         <div className='bg-[#F9F8FE] maz-w-[1920px] py-20'>
-          <div className='md:max-w-[1153px] max-w-full mx-auto flex flex-col'>
+          <div className='md:max-w-[1153px] md:mx-auto mx-2 flex flex-col'>
           <div className='flex gap-6 md:gap-14 mb-10'>
             <h3 className='font-semibold text-brandPrimary2 text-[16px] md:text-[24px] underline'>Description</h3>
             <h3 className='font-semibold text-brandPrimary2 text-[16px] md:text-[24px]'>Additional Info</h3>
@@ -125,7 +125,7 @@ const ProductDetails = () => {
          {/* Related Products */}
         <div className='flex flex-col py-20 md:mx-24 mx-auto'>
           <h2 className='text-[#101750] font-bold text-[24px] md:text-[36px] mb-6 px-4'>Related Products</h2>
-          <div className='flex flex-wrap items-center'>
+          <div className='flex flex-col md:flex-wrap items-center'>
             {[
               {src:"/Rectangle 128.png", title:"Mens Fashion Wear",price:"$43.00"},
               {src:"/Group 233.png", title:"Women’s Fashion",price:"$67.00"},
@@ -146,8 +146,8 @@ const ProductDetails = () => {
                      className="object-contain" 
                   />
                 </div>
-                <div className='flex gap-2'>
-                <h3 className='text-brandPrimary2 font-semibold text-sm md:text-[16px] mb-2'>{products.title}</h3>
+                <div className='flex md:gap-2 gap-4'>
+                <h3 className='text-brandPrimary2 font-semibold text-sm md:text-[16px] mb-1 md:mb-2'>{products.title}</h3>
                 <div className='flex gap-1'>
                   <Star className='w-4 h-5 stroke-transparent fill-[#FFC416]' />
                   <Star className='w-4 h-5 stroke-transparent fill-[#FFC416]' />
@@ -158,7 +158,7 @@ const ProductDetails = () => {
                   style={{fill: index === 1 ? "#FFC416" : "#B2B2B2"}}/>
                 </div>
                 </div>
-                <p className='text-brandPrimary2 text-xs md:text-[13px] font-medium'>{products.price}</p>
+                <p className='text-brandPrimary2 text-xs md:text-[13px] font-medium mb-2'>{products.price}</p>
           </div>
         ))}
         </div>
