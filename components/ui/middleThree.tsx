@@ -24,7 +24,7 @@ const MiddleThree = () => {
             </h3>
             
             {/* Button */}
-            <Button className="bg-brandPrimary1 text-white font-medium text-sm rounded shadow-sm hover:bg-pink-600 transition-all duration-300" style={{ width: "173px", height: "49px" }}>
+            <Button className="bg-brandPrimary1 text-white font-medium text-sm rounded shadow-sm hover:bg-pink-600 transition-all duration-300 sm:mb-6" style={{ width: "173px", height: "49px" }}>
               Shop Now
             </Button>
           </div>
