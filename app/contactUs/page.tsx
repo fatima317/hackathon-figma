@@ -88,7 +88,7 @@ const ContactUs = () => {
         </div>
         <div className='md:flex gap-2'>
           {/* Contact Form */}
-        <div className='max-w-[534px] flex flex-col ml-24 items-start py-10'>
+        <div className='max-w-[534px] flex flex-col md:ml-24 items-start py-10'>
           <div className='flex flex-wrap gap-2 mb-6'>
           <Input
           type='text'
@@ -111,8 +111,9 @@ const ContactUs = () => {
           placeholder='Type Your Messege*'
           className='md:h-[116px] mb-6'
            />
-          <Button  className="bg-brandPrimary1 text-white font-medium text-[16px] rounded shadow-sm hover:bg-pink-600 transition-all duration-300" 
-          style={{ width: "157px", height: "44px" }}>Send Mail</Button>
+          <Button  className="bg-brandPrimary1 text-white font-medium text-[16px] rounded shadow-sm hover:bg-pink-600 transition-all duration-300 md:w-[157px] md:h-[44px]">
+            Send Mail
+          </Button>
         </div>
          {/* Image Section */}
           <div className='md:-mt-36 px-8 md:mb-40'>
