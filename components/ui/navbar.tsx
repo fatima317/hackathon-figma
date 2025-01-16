@@ -159,7 +159,7 @@ const Navbar = () => {
                     <p onClick={() => router.push('/notFound')} className="text-sm font-medium cursor-pointer">Pages</p>
                     <ChevronDown className="w-5 h-4 cursor-pointer" onClick={() => setShowPageDropdown(!showPageDropdown)}/>
                     {showPageDropdown && (
-                   <div className="absolute top-full mt-2 ml-14">
+                   <div className="absolute top-full mt-4 ml-16">
                     <Link href={"/shoppingCurt"} className='block text-sm font-medium'> Shopping Cart</Link>
                     <Link href={"/orderCompleted"} className='block text-sm font-medium'>Order Completed</Link>
                     <Link href={"/shopList"} className='block text-sm font-medium'> Shop List</Link>

@@ -160,7 +160,7 @@ const SingleBlog = () => {
             ].map((products, index) => (
             <div
               key={index}
-              className="flex flex-wrap gap-4 shadow-lg p-4 md:w-[667.68px] md:h-[137.16px]">
+              className="flex flex-col md:flex-wrap gap-4 shadow-lg p-4 md:w-[667.68px] md:h-[137.16px]">
             <div>
               <Image
                 src={products.src}
@@ -174,7 +174,7 @@ const SingleBlog = () => {
               <h3 className='text-brandPrimary2 font-semibold text-[18px]'>{products.title}</h3>
               <p className='text-[#A3A2B6] text-[13px] font-medium'>{products.date}</p>
               </div>
-              <div className='w-[506px] tracking-wide leading-loose'>
+              <div className='w-[506px] md:tracking-wide md:leading-loose'>
               <p className='text-[#A3A2B6] font-medium text-[12px]'>{products.description}</p>
               </div>
             </div>
@@ -182,7 +182,7 @@ const SingleBlog = () => {
             ))}
           </div>
           <div className='max-w-[717px] flex flex-col my-8'>
-          <div className='md:flex gap-8 mb-12'>
+          <div className='md:flex md:gap-8 md:mb-12'>
             <div className='flex items-center relative'>
             <User className='w-4 h-4 stroke-brandPrimary3 absolute ml-2'/>
             <Input className='md:w-[341.64px] h-[42.71px] rounded-none' type='text' placeholder='    Your Name*'/>
