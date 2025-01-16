@@ -28,14 +28,14 @@ const ShoppingCurt = () => {
        {/* Cart Items Section */}
       <div className='py-10 px-2 md:py-20'>
         {/* Table Headers */}
-      <div className='flex flex-wrap gap6 md:gap-20 md:ml-32 mb-8'>
+      <div className='flex flex-wrap gap-6 md:gap-20 md:ml-32 mb-8'>
         <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold'>Product</h3>
         <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold md:ml-28 ml-16'>Price</h3>
         <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold'>Quantity</h3>
         <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold'>Total</h3>
       </div>
       {/* Product List */}
-      <div className='flex flex-col md:flex-wrap items-start md:gap-20 gap-10'>
+      <div className='flex flex-wrap items-start md:gap-20 gap-10'>
       <div className='flex flex-col md:ml-32'>
         {[
           {src:"/Rectangle 34.png", title:"Ut diam consequat", description1:"Color:Brown", description2:"Size:XL"},
@@ -46,7 +46,7 @@ const ShoppingCurt = () => {
         ].map((products, index) => (
            <div
              key={index}
-             className="relative flex flex-row items-center gap-4 shadow-sm py-4">
+             className="relative flex sm:flex-col md:flex-row items-center gap-4 shadow-sm py-4">
              {/* Product Image */}
             <div className='relative'>
             <GrClose className='bg-black stroke-white rounded-full md:ml-16 -mt-2 px-1 w-5 h-5 absolute' />
@@ -65,7 +65,7 @@ const ShoppingCurt = () => {
             </div>
             {/* Product Price */}
             <div>
-              <p className='text-brandPrimary2 font-medium text-xs md:text-[14px] md:ml-9 mr-2'>$32.00</p>
+              <p className='text-brandPrimary2 font-medium text-xs md:text-[14px] md:ml-9 ml-2'>$32.00</p>
             </div>
             {/* Quantity Selector */}
             <div className='md:ml-20'>
