@@ -7,7 +7,7 @@ const DiscountItem = () => {
   return (
     <section className="max-w-[1920px] mx-auto bg-white m-4">
       {/* Heading */}
-      <h2 className="text-center text-[32px] sm:text-[42px] font-bold text-[#151875] mb-8">
+      <h2 className="text-center text-[32px] sm:text-3xl font-bold text-[#151875] mb-8">
         Discount Item
       </h2>
 
@@ -16,7 +16,7 @@ const DiscountItem = () => {
         {["Wood Chair", "Plastic Chair", "Sofa Collection"].map((category, index) => (
           <div
             key={index}
-            className={`text-[18px] ${
+            className={`text-[18px] sm:text-sm ${
               index === 0 ? "text-[#FB2E86] underline" : "text-[#151875]"
             }`}
           >
@@ -29,13 +29,13 @@ const DiscountItem = () => {
       <div className="max-w-[1214px] mx-auto flex flex-col lg:flex-row items-center justify-between h-auto lg:h-[597px] px-6 lg:px-12 gap-6 lg:gap-0">
         {/* Text on the Left */}
         <div className="flex flex-col items-start max-w-[515px] mx-auto">
-          <h3 className="text-brandPrimary2 font-bold text-[28px] sm:text-[35px] mb-4">
+          <h3 className="text-brandPrimary2 font-bold text-[28px] sm:text-2xl mb-4">
             20% Discount Of All Products
           </h3>
-          <h4 className="text-brandPrimary1 font-medium text-[18px] sm:text-[21px] mb-4">
+          <h4 className="text-brandPrimary1 font-medium text-[18px] sm:text-xl mb-4">
             Eams Sofa Compact
           </h4>
-          <p className="text-[#B8B8DC] font-medium text-[17px] mb-4">
+          <p className="text-[#B8B8DC] font-medium text-[17px] sm:text-sm mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu eget feugiat habitasse nec, bibendum condimentum.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
@@ -47,7 +47,7 @@ const DiscountItem = () => {
           ].map((feature, index) => (
             <p
               key={index}
-              className="flex items-center text-[#B8B8DC] font-medium text-[15px] mb-2"
+              className="flex items-center text-[#B8B8DC] font-medium text-[15px] sm:text-sm mb-2"
             >
               <Check className="stroke-[#7569B2]" /> {feature}
             </p>
@@ -57,7 +57,7 @@ const DiscountItem = () => {
         </div>
 
         {/* Image on the Right */}
-        <div className="flex items-center justify-center max-w-full lg:max-w-[699px]">
+        <div className="flex items-center justify-center lg:max-w-[699px]">
           <Image
             src={"/Group 154.png"}
             alt="tortuga"
