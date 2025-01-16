@@ -18,21 +18,21 @@ const Hero = () => {
       </div>
 
       {/* Center Column: Content (Title, Description, Button) */}
-      <div className="md:w-[44%] md:max-w-[644px] text-center flex flex-col justify-center py-6">
+      <div className="md:w-[44%] md:max-w-[644px] text-center flex flex-col md:items-start items-center justify-center py-6">
         <p className="text-[16px] text-pink-500 font-medium">
           Best Furniture For Your Castle...
         </p>
-        <h1 className="text-4xl md:text-[53px] font-bold text-black mt-4">
+        <h1 className="text-4xl md:text-[48px] font-bold text-black tracking-tight mt-4">
           New Furniture Collection Trends in 2020
         </h1>
-        <p className="text-[#8A8FB9] text-sm md:text-[16px] font-medium md:mt-8 mt-4">
+        <p className="text-[#8A8FB9] text-sm md:text-[16px] font-medium mt-4 md:mt-8">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est
           adipiscing in phasellus non in justo.
         </p>
         <div className="mt-4 md:mt-8">
           <Button className="bg-brandPrimary1 text-white font-semibold text-sm md:text-[17px] rounded shadow-sm hover:bg-pink-600 transition-all duration-300 md:w-[163px] md:h-[50px]">
             Shop Now
-          </Button>
+            </Button>
         </div>
       </div>
       {/* Right Column: Chair Image */}
