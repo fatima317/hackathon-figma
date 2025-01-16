@@ -30,12 +30,12 @@ const ShoppingCurt = () => {
         {/* Table Headers */}
       <div className='flex flex-wrap gap-6 md:gap-20 md:ml-32 mb-8'>
         <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold'>Product</h3>
-        <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold ml-28'>Price</h3>
+        <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold md:ml-28 ml-12'>Price</h3>
         <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold'>Quantity</h3>
         <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold'>Total</h3>
       </div>
       {/* Product List */}
-      <div className='flex flex-wrap items-start gap-20'>
+      <div className='flex flex-wrap items-start md:gap-20 gap-10'>
       <div className='flex flex-col md:ml-32'>
         {[
           {src:"/Rectangle 34.png", title:"Ut diam consequat", description1:"Color:Brown", description2:"Size:XL"},
@@ -65,7 +65,7 @@ const ShoppingCurt = () => {
             </div>
             {/* Product Price */}
             <div>
-              <p className='text-brandPrimary2 font-medium text-xs md:text-[14px] md:ml-9'>$32.00</p>
+              <p className='text-brandPrimary2 font-medium text-xs md:text-[14px] md:ml-9 mr-2'>$32.00</p>
             </div>
             {/* Quantity Selector */}
             <div className='md:ml-20'>
