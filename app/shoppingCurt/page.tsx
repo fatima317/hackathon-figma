@@ -28,14 +28,14 @@ const ShoppingCurt = () => {
        {/* Cart Items Section */}
       <div className='py-10 px-2 md:py-20'>
         {/* Table Headers */}
-      <div className='flex flex-wrap gap-4 md:gap-20 md:ml-32 mb-8'>
+      <div className='flex flex-wrap gap6 md:gap-20 md:ml-32 mb-8'>
         <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold'>Product</h3>
-        <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold md:ml-28 ml-20'>Price</h3>
+        <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold md:ml-28 ml-16'>Price</h3>
         <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold'>Quantity</h3>
         <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold'>Total</h3>
       </div>
       {/* Product List */}
-      <div className='flex flex-wrap items-start md:gap-20 gap-10'>
+      <div className='flex flex-col md:flex-wrap items-start md:gap-20 gap-10'>
       <div className='flex flex-col md:ml-32'>
         {[
           {src:"/Rectangle 34.png", title:"Ut diam consequat", description1:"Color:Brown", description2:"Size:XL"},
