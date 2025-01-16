@@ -51,7 +51,7 @@ const FAQ = () => {
           ].map((faq, index) => (
             <div key={index} className="mb-8">
               <h3 className="text-[17px] font-bold text-[#1D3178] mb-2">{faq.question}</h3>
-              <p className="text-brandPrimary3 text-[16px] font-medium">{faq.answer}</p>
+              <p className="text-brandPrimary3 text-sm md:text-[16px] font-medium">{faq.answer}</p>
             </div>
           ))}
         </div>
@@ -59,11 +59,10 @@ const FAQ = () => {
         {/* Ask a Question Section */}
         <div className='max-w-[90%] md:max-w-[566px] bg-[#F8F8FD] flex flex-col mx-auto py-6 px-6 md:pl-10 md:pr-16 '>
           <h3 className='text-[20px] md:text-[24px] font-bold text-[#1D3178]  mb-16 md:mb-28 mt-6'>Ask a Question</h3>
-          <Input placeholder='Your Name' className='mb-10 bg-white' type='text' style={{width: "445px", height: "50px" }}/>
-          <Input placeholder='Subject' className='mb-10 bg-white' type='text' style={{ width: "445px", height: "50px" }}/>
-          <Input placeholder='Type Your Message' className='mb-10 bg-white' type='text' style={{ width: "445px", height: "157px" }}/>
-          <Button className="bg-brandPrimary1 text-white font-medium text-[14px] md:text-[16px] mb-10 rounded shadow-sm hover:bg-pink-600 transition-all duration-300"
-          style={{ width: "156px", height: "48px" }}>
+          <Input placeholder='Your Name' className='mb-10 bg-white md:w-[445px] md:h-[50px]' type='text'/>
+          <Input placeholder='Subject' className='mb-10 bg-white md:w-[445px] md:h-[50px]' type='text'/>
+          <Input placeholder='Type Your Message' className='mb-10 bg-white md:w-[445px] md:h-[157px]' type='text'/>
+          <Button className="bg-brandPrimary1 text-white font-medium text-[14px] md:text-[16px] mb-10 rounded shadow-sm hover:bg-pink-600 transition-all duration-300 md:w-[156px] md:h-[48px]">
             Send Mail
             </Button>
         </div>
