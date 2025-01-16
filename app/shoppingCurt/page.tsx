@@ -28,16 +28,15 @@ const ShoppingCurt = () => {
        {/* Cart Items Section */}
       <div className='py-10 md:py-20'>
         {/* Table Headers */}
-      <div className='flex flex-wrap gap-10 md:gap-20 ml-32 mb-8'>
-        <h3 className='text-brandPrimary2 text-[18px] lg:text-[20px] font-bold'>Product</h3>
-        <h3 className='text-brandPrimary2 text-[18px] lg:text-[20px] font-bold ml-28'>Price</h3>
-        <h3 className='text-brandPrimary2 text-[18px] lg:text-[20px] font-bold'>Quantity</h3>
-        <h3 className='text-brandPrimary2 text-[18px] lg:text-[20px] font-bold'>Total</h3>
-        <h3 className='text-brandPrimary2 text-[18px] lg:text-[20px] font-bold ml-24'>Cart Totals</h3>
+      <div className='flex flex-wrap gap-8 md:gap-20 md:ml-32 mb-8'>
+        <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold'>Product</h3>
+        <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold ml-28'>Price</h3>
+        <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold'>Quantity</h3>
+        <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold'>Total</h3>
       </div>
       {/* Product List */}
       <div className='flex flex-wrap items-start gap-20'>
-      <div className='flex flex-col ml-32'>
+      <div className='flex flex-col md:ml-32'>
         {[
           {src:"/Rectangle 34.png", title:"Ut diam consequat", description1:"Color:Brown", description2:"Size:XL"},
           {src:"/Rectangle 35 (1).png", title:"Ut diam consequat", description1:"Color:Brown", description2:"Size:XL"},
@@ -47,10 +46,10 @@ const ShoppingCurt = () => {
         ].map((products, index) => (
            <div
              key={index}
-             className="relative flex flex-wrap md:flex-row items-center gap-4 shadow-sm py-4">
+             className="relative flex flex-row items-center gap-4 shadow-sm py-4">
              {/* Product Image */}
             <div className='relative'>
-            <GrClose className='bg-black stroke-white rounded-full ml-16 -mt-2 px-1 w-5 h-5 absolute' />
+            <GrClose className='bg-black stroke-white rounded-full md:ml-16 -mt-2 px-1 w-5 h-5 absolute' />
             <Image
             src={products.src}
             alt={products.title}
@@ -60,16 +59,16 @@ const ShoppingCurt = () => {
             </div>
             {/* Product Details */}
             <div className='flex flex-col'>
-            <h3 className='text-black font-medium text-[14px]'>{products.title}</h3>
-            <p className='text-brandPrimary3 font-medium text-[14px]'>{products.description1}</p>
-            <p className='text-brandPrimary3 font-medium text-[14px]'>{products.description2}</p>
+            <h3 className='text-black font-medium text-sm md:text-[14px]'>{products.title}</h3>
+            <p className='text-brandPrimary3 font-medium text-sm md:text-[14px]'>{products.description1}</p>
+            <p className='text-brandPrimary3 font-medium text-sm md:text-[14px]'>{products.description2}</p>
             </div>
             {/* Product Price */}
             <div>
-              <p className='text-brandPrimary2 font-medium text-[14px] ml-9'>$32.00</p>
+              <p className='text-brandPrimary2 font-medium text-sm md:text-[14px] md:ml-9'>$32.00</p>
             </div>
             {/* Quantity Selector */}
-            <div className='ml-20'>
+            <div className='md:ml-20'>
               <Image
                src={"/Group 248.png"}
                alt='quantity bar'
@@ -79,7 +78,7 @@ const ShoppingCurt = () => {
             </div>
             {/* Total Price */}
             <div>
-              <p className='text-[#15245E] font-medium text-[14px] ml-20'>£219.00</p>
+              <p className='text-[#15245E] font-medium text-sm md:text-[14px] md:ml-20'>£219.00</p>
             </div>
             </div>
             ))}
@@ -97,6 +96,7 @@ const ShoppingCurt = () => {
           </div>
             <div className='max-w-[371px] bg-white'>
               {/* Cart Totals Section */}
+              <h3 className='text-brandPrimary2 text-[20px] font-bold md:ml-24 py-4'>Cart Totals</h3>
               <div className='bg-[#E8E6F1] flex flex-col px-6 py-6'>
                 <div className='flex flex-wrap justify-between shadow-sm pt-8 pb-2'>
                 <p className='text-brandPrimary2 font-semibold text-[18px]'>Subtotals:</p>
@@ -117,7 +117,7 @@ const ShoppingCurt = () => {
                 </Button>
                 </div>
               </div> 
-              <h3 className='text-brandPrimary2 text-[20px] font-bold ml-24 py-4'>Calculate Shopping</h3>
+              <h3 className='text-brandPrimary2 text-[20px] font-bold md:ml-24 py-4'>Calculate Shopping</h3>
               <div className='bg-[#F4F4FC] flex flex-col px-6 py-6'>
                 <div className='flex flex-wrap shadow-sm pt-8 pb-2'>
                 <p className='text-[#C5CBE3] font-semibold text-[14px]'>Bangladesh</p>
