@@ -65,7 +65,7 @@ const ShoppingCurt = () => {
             </div>
             {/* Product Price */}
             <div>
-              <p className='text-brandPrimary2 font-medium text-xs md:text-[14px] md:ml-9 -ml-2'>$32.00</p>
+              <p className='text-brandPrimary2 font-medium text-xs md:text-[14px] md:ml-9 -ml-0'>$32.00</p>
             </div>
             {/* Quantity Selector */}
             <div className='md:ml-20'>
@@ -94,7 +94,7 @@ const ShoppingCurt = () => {
             </div>
             </div>
           </div>
-            <div className='max-w-[371px] bg-white -mt-12'>
+            <div className='max-w-[371px] bg-white md:-mt-18'>
               {/* Cart Totals Section */}
               <h3 className='text-brandPrimary2 text-[20px] font-bold md:ml-24 py-4'>Cart Totals</h3>
               <div className='bg-[#E8E6F1] flex flex-col px-6 py-6'>

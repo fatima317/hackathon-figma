@@ -174,7 +174,7 @@ const SingleBlog = () => {
               <h3 className='text-brandPrimary2 font-semibold text-[18px]'>{products.title}</h3>
               <p className='text-[#A3A2B6] text-[13px] font-medium'>{products.date}</p>
               </div>
-              <div className='w-[506px] md:tracking-wide md:leading-loose'>
+              <div className='md:w-[506px] tracking-wide leading-loose'>
               <p className='text-[#A3A2B6] font-medium text-[12px]'>{products.description}</p>
               </div>
             </div>

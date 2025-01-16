@@ -83,7 +83,7 @@ const HektoDemo = () => {
                   </div>
                 ))}
                 {/* Country and Postal Code */}
-              <div className='flex flex-col md:flex-row justify-between my-4'>
+              <div className='flex flex-row justify-between my-4'>
               <div className="w-full md:w-[40%]">
               <p className='text-[#C1C8E1] text-xs md:text-[14px] font-medium md:mb-2'>Bangladesh</p>
               <Image src={"/Line 15.png"} alt='line' width={336} height={0} className="w-full"/>
@@ -94,7 +94,7 @@ const HektoDemo = () => {
               </div>
               </div>
                {/* Continue Shipping Button */}
-              <div className='mt-20 mb-10'>
+              <div className='mt-10 md:mt-20 md:mb-10 mb-5'>
                 <Button  className="bg-brandPrimary1 text-white font-semibold text-[16px] rounded shadow-sm hover:bg-pink-600 transition-all duration-300" style={{ width: "182px", height: "44px" }}>
                   Continue Shipping
                 </Button>
