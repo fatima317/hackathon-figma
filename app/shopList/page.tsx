@@ -74,7 +74,7 @@ const ShopList = () => {
          alt={products.title}
          width={313.63}
          height={217.56}
-         className="object-contain w-full" 
+         className="object-contain" 
          />
          </div>
         {/* Product Details */}

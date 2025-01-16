@@ -260,7 +260,7 @@ const ShopLeftSidebar = () => {
         ].map((products, index) => (
           <div
             key={index}
-            className="relative flex flex-col md:flex-row items-center p-4 md:gap-5 md:px-4 md:pt-10 shadow-sm md:w-[921px] md:h-[230px]">
+            className="relative flex flex-col md:flex-row items-center p-4 gap-5 md:px-4 md:pt-10 shadow-sm md:w-[921px] md:h-[230px]">
             
           {/* Image */}
          <div>
@@ -273,7 +273,7 @@ const ShopLeftSidebar = () => {
          />
          </div>
         {/* Product Details */}
-        <div className="max-w-[591px] flex flex-col sm:items-center">
+        <div className="max-w-[591px] flex flex-col items-center md:items-start">
           {/* Product Title and Colors */}
         <div className='flex flex-wrap gap-4 mb-2'>
         <h3 className="text-[#151875] font-bold text-[18px]">{products.title}</h3>
@@ -295,8 +295,8 @@ const ShopLeftSidebar = () => {
               <Star className='w-4 h-5 stroke-transparent fill-[#B2B2B2]' />
               </div>
         </div>
-        <p className='text-brandPrimary3 text-[16px] font-medium mb-4 pr-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
-        <div className='flex gap-10 mt-2'>
+        <p className='text-brandPrimary3 text-[16px] font-medium mb-2 md:mb-4 md:pr-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
+        <div className='flex gap-4 md:gap-10 mt-2'>
               <Button
                  size="icon" variant="secondary" className='rounded-full bg-white'
                 style={{
