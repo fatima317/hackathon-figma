@@ -143,7 +143,7 @@ const SingleBlog = () => {
             <div className='bg-[#FF27B7] rounded-full w-6 h-6'><FaInstagram className='fill-white w-6 h-6 p-1'/></div>
             <div className='bg-[#37DAF3] rounded-full  w-6 h-6'><FaTwitter className='fill-white w-6 h-6 p-1'/></div>
           </div>
-          <div className='bg-[#F7F8FB] w-[882.69px] h-[45px] flex justify-between px-2'>
+          <div className='bg-[#F7F8FB] w-ful md:w-[882.69px] h-[45px] flex justify-between px-2'>
             <div className='flex items-center gap-1'>
             <ArrowLeft className='stroke-brandPrimary3 w-4 h-4'/>
             <p className='text-brandPrimary3 font-medium text-[14px]'>Previous Post</p>
@@ -160,8 +160,7 @@ const SingleBlog = () => {
             ].map((products, index) => (
             <div
               key={index}
-              className="flex flex-wrap gap-4 shadow-lg p-4"
-              style={{width:"667.68px", height:"137.16px"}}>
+              className="flex flex-wrap gap-4 shadow-lg p-4 md:w-[667.68px] md:h-[137.16px]">
             <div>
               <Image
                 src={products.src}
@@ -183,14 +182,14 @@ const SingleBlog = () => {
             ))}
           </div>
           <div className='max-w-[717px] flex flex-col my-8'>
-          <div className='flex gap-8 mb-12'>
+          <div className='md:flex gap-8 mb-12'>
             <div className='flex items-center relative'>
             <User className='w-4 h-4 stroke-brandPrimary3 absolute ml-2'/>
-            <Input className='w-[341.64px] h-[42.71px] rounded-none' type='text' placeholder='    Your Name*'/>
+            <Input className='md:w-[341.64px] h-[42.71px] rounded-none' type='text' placeholder='    Your Name*'/>
             </div>
             <div className='flex items-center relative'>
             <Mail className='w-4 h-4 stroke-brandPrimary3 absolute ml-2' />
-            <Input className='w-[341.64px] h-[42.71px] rounded-none' type='text' placeholder='    Write Your Email*'/>
+            <Input className='md:w-[341.64px] h-[42.71px] rounded-none' type='text' placeholder='    Write Your Email*'/>
             </div>
           </div>
             <div className='flex items-center relative'>
@@ -202,8 +201,9 @@ const SingleBlog = () => {
               <p className='text-[13px] font-medium text-brandPrimary3'>Save my name, email, and website in this browser for the next time I comment.</p>
             </div>
             <div className='my-8 px-2'>
-            <Button className="bg-brandPrimary1 text-white font-medium text-sm text-center rounded shadow-sm hover:bg-pink-600 transition-all duration-300" style={{ width: "697.89px", height: "49.45px" }}>
-            Continue Shipping</Button>
+            <Button className="bg-brandPrimary1 text-white font-medium text-sm text-center rounded shadow-sm hover:bg-pink-600 transition-all duration-300 md:w-[697.89px] md:h-[49.45px]">
+            Continue Shipping
+            </Button>
             </div>
           </div>
         </div>

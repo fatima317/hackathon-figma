@@ -35,7 +35,7 @@ const ShoppingCurt = () => {
         <h3 className='text-brandPrimary2 text-[16px] md:text-[20px] font-bold'>Total</h3>
       </div>
       {/* Product List */}
-      <div className='flex flex-wrap items-start md:gap-20 gap-10'>
+      <div className='flex flex-wrap items-start md:gap-20 gap-8'>
       <div className='flex flex-col md:ml-32'>
         {[
           {src:"/Rectangle 34.png", title:"Ut diam consequat", description1:"Color:Brown", description2:"Size:XL"},
@@ -58,14 +58,14 @@ const ShoppingCurt = () => {
             />
             </div>
             {/* Product Details */}
-            <div className='flex flex-wrap md:flex-col'>
+            <div className='flex flex-col'>
             <h3 className='text-black font-medium text-xs md:text-[14px]'>{products.title}</h3>
             <p className='text-brandPrimary3 font-medium text-xs md:text-[14px]'>{products.description1}</p>
             <p className='text-brandPrimary3 font-medium text-xs md:text-[14px]'>{products.description2}</p>
             </div>
             {/* Product Price */}
             <div>
-              <p className='text-brandPrimary2 font-medium text-xs md:text-[14px] md:ml-9'>$32.00</p>
+              <p className='text-brandPrimary2 font-medium text-xs md:text-[14px] md:ml-9 -ml-6'>$32.00</p>
             </div>
             {/* Quantity Selector */}
             <div className='md:ml-20'>
@@ -94,7 +94,7 @@ const ShoppingCurt = () => {
             </div>
             </div>
           </div>
-            <div className='max-w-[371px] bg-white mb-12'>
+            <div className='max-w-[371px] bg-white -mt-12'>
               {/* Cart Totals Section */}
               <h3 className='text-brandPrimary2 text-[20px] font-bold md:ml-24 py-4'>Cart Totals</h3>
               <div className='bg-[#E8E6F1] flex flex-col px-6 py-6'>
