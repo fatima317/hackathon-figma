@@ -89,7 +89,7 @@ const ContactUs = () => {
         <div className='md:flex gap-2'>
           {/* Contact Form */}
         <div className='max-w-[534px] flex flex-col md:ml-24 items-start py-10'>
-          <div className='flex flex-wrap gap-2 mb-6'>
+          <div className='md:flex md:flex-wrap md:gap-2 mb-6'>
           <Input
           type='text'
           placeholder='Your Name*'

@@ -125,7 +125,7 @@ const ProductDetails = () => {
          {/* Related Products */}
         <div className='flex flex-col py-20 md:mx-24 mx-auto'>
           <h2 className='text-[#101750] font-bold text-[24px] md:text-[36px] mb-6 px-4'>Related Products</h2>
-          <div className='flex flex-col md:flex-wrap items-center'>
+          <div className='flex flex-wrap items-center'>
             {[
               {src:"/Rectangle 128.png", title:"Mens Fashion Wear",price:"$43.00"},
               {src:"/Group 233.png", title:"Women’s Fashion",price:"$67.00"},
