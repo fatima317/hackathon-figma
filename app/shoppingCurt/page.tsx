@@ -46,7 +46,7 @@ const ShoppingCurt = () => {
         ].map((products, index) => (
            <div
              key={index}
-             className="relative flex flex-col md:flex-row items-center gap-2 md:gap-4 shadow-sm py-4">
+             className="relative flex flex-row items-center gap-2 md:gap-4 shadow-sm py-4">
              {/* Product Image */}
             <div className='relative'>
             <GrClose className='bg-black stroke-white rounded-full md:ml-16 -mt-2 px-1 w-5 h-5 absolute' />
