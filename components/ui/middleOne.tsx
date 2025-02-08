@@ -6,15 +6,14 @@ const MiddleOne = () => {
     <section className="max-w-[1920px] mx-auto bg-white py-8">
       {/* Title */}
       <h2 className="text-center text-[32px] sm:text-[42px] font-bold text-[#151875] mb-10">
-        What Shopex Offer!
+        What Hekto Offer!
       </h2>
 
       {/* Flex container for offering items */}
       <div className="flex flex-wrap items-center justify-center gap-4 m-6">
         {/* Loop through offering items */}
         {[
-          { src: "/free-delivery 1.png", title: "Free Delivery" },
-          { src: "/cashback 1.png", title: "Cashback" },
+          { src: "/cashback 1.png", title: "Affordable Prices" },
           { src: "/premium-quality 1.png", title: "Premium Quality" },
           { src: "/24-hours-support 1.png", title: "24/7 Support" },
         ].map((item, index) => (

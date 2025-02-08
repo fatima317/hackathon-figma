@@ -1,30 +1,33 @@
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
-import { trendingProduct } from "@/sanity/lib/queries";
+import { topProduct } from "@/sanity/lib/queries";
 import { Product } from "@/types/products";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 export default async function Furniture() {
-  const products: Product[] = await client.fetch(trendingProduct);
+  const products: Product[] = await client.fetch(topProduct);
 
   return (
     <div className="max-w-[1920px] mx-auto bg-white py-8">
       {/* Page Title */}
       <h2 className="text-center text-[32px] lg:text-[42px] font-bold text-[#151875] mb-10">
-        Trending Products
+       Top Products
       </h2>
 
       {/* Product Grid */}
-      <div className="flex flex-wrap items-center justify-center m-4 gap-6">
+      <div className="flex flex-wrap items-center justify-center m-4 gap-20">
         {products.map((product) => (
           <div
             key={product._id}
-            className="flex flex-col items-center justify-center bg-slate-100 shadow-lg transition-shadow duration-300 hover:scale-105"
+            className="flex flex-col items-center justify-center bg-no-repeat bg-top"
             style={{
-              width: "260px",
-              height: "320px",
+              width: '269px',
+              height: '345px',
+              backgroundImage:`url('/top categories.png')`,
+              backgroundSize: "262px 269px",
+ 
             }}
           >
             <Link href={`/product/${product.slug.current}`}>
@@ -33,20 +36,18 @@ export default async function Furniture() {
                 <Image
                   src={urlFor(product.image).url()}
                   alt={product.name}
-                  width={197}
-                  height={194}
-                  className="mx-auto"
+                  width={178}
+                  height={177}
+                  className="mx-auto my-2 object-cover"
                 />
               )}
 
               {/* Product Details */}
-              <h3 className="text-[18px] text-center font-bold text-brandPrimary2 mt-6">
+              <div className="mt-4">
+              <h3 className="text-[16px] text-center font-bold text-brandPrimary2 mt-4 px-4">
                 {product.name}
-              </h3>
-                <p className="text-[#151875] font-semibold text-[14px] text-center">
-                  ${product.price}
-                </p>  
-
+              </h3> 
+                </div>
             </Link>
           </div>
         ))}
