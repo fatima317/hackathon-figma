@@ -25,50 +25,32 @@ const Footer = () => {
                 type='text'
                 className='h-[36px] w-[287px] placeholder:text-[#8A8FB9] placeholder:text-[16px] bg-white rounded-sm'
               />
-              <Button className='absolute right-6 top-0 bottom-0 py-2 bg-[#FB2E86] text-white text-[16px] rounded-sm font-medium w-[105px] h-[36px]'>
+              <Button className='absolute right-0 top-0 bottom-0 py-2 bg-[#FB2E86] text-white text-[16px] rounded-sm font-medium w-[105px] h-[36px]'>
                 Sign Up
               </Button>
             </div>
-            <div className='text-[16px] text-[#8A8FB9]'>
-              <p>Contact Info</p>
-              <p>17 Princess Road, London, Greater London NW1 8JR, UK</p>
-            </div>
           </div>
           
-          {/* Footer Column 2: Categories */}
-          <div className='md:space-y-8 space-y-2'>
-            <h1 className='text-[22px] text-black font-semibold'>Categories</h1>
-            <ul className='text-[16px] text-[#8A8FB9] md:space-y-4 space-y-2'>
-              <li>Laptops & Computers</li>
-              <li>Cameras & Photography</li>
-              <li>Smart Phones & Tablets</li>
-              <li>Video Games & Consoles</li>
-              <li>Waterproof Headphones</li>
-            </ul>
-          </div>
-          
-          {/* Footer Column 3: Customer Care */}
+          {/* Footer Column 2: Customer Care */}
           <div className='md:space-y-8 space-y-2'>
             <h1 className='text-[22px] text-black font-semibold'>Customer Care</h1>
             <ul className='text-[16px] text-[#8A8FB9] md:space-y-4 space-y-2'>
-              <li onClick={() => router.push('/myAccount')}>My Account</li>
-              <li onClick={() => router.push('/productDetails')}>Discount</li>
-              <li>Returns</li>
-              <li>Orders History</li>
-              <li>Order Tracking</li>
+              <li>Help Center</li>
+              <li>How to Buy</li>
+              <li onClick={() => router.push('/shopList')}>Browse The Shop</li>
+              <li>Returns & Refunds</li>
+              <li>Contact Us</li>
             </ul>
           </div>
           
-          {/* Footer Column 4: Pages */}
+          {/* Footer Column 3: Pages */}
           <div className='md:space-y-8 space-y-2'>
-            <h1 className='text-[22px] text-black font-semibold'>Pages</h1>
+            <h1 className='text-[22px] text-black font-semibold'>About Us</h1>
             <ul className='text-[16px] text-[#8A8FB9] md:space-y-4 space-y-2'>
               <li onClick={() => router.push('/blogPage')}>Blog</li>
-              <li onClick={() => router.push('/shopList')}>Browse The Shop</li>
-              <li onClick={() => router.push('/')}>Category</li>
-              <li>Pre-Built Pages</li>
-              <li>Visual Composer Elements</li>
-              <li>WooCommerce Pages</li>
+              <li>Terms & Conditions</li>
+              <li>Sell on Hekto</li>
+              <li>Join Affiliate Program</li>
             </ul>
           </div>
           
