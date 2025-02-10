@@ -14,9 +14,9 @@ const Navbar = () => {
 
   return (
     <nav className="max-w-[1920px] mx-auto py-4 px-4 md:px-0">
-      <div className="max-w-[1177px] h-[40px] hidden md:flex items-center justify-center gap-24">
-        <h2 className="text-[36px] font-bold text-[#0D0E43] ml-32">Hekto</h2>
-        <div className="flex flex-wrap items-center justify-center gap-6 text-[#0D0E43]">
+      <div className="max-w-[1177px] h-[40px] hidden md:flex items-center justify-center gap-20">
+        <h2 className="text-[34px] font-bold text-[#0D0E43] ml-28">Hekto</h2>
+        <div className="flex flex-wrap items-center justify-center gap-4 text-[#0D0E43]">
           {/* Home Dropdown */}
           <div
             className="relative flex items-center text-brandPrimary1"
@@ -45,6 +45,18 @@ const Navbar = () => {
                   My Account
                 </Link>
                 <Link
+                  href="/shopList"
+                  className="block py-2 text-[14px] font-semibold text-[#0D0E43] hover:bg-pink-300"
+                >
+                 Shop List
+                </Link>
+                <Link
+                  href="/shopLeftSidebar"
+                  className="block py-2 text-[14px] font-semibold text-[#0D0E43] hover:bg-pink-300"
+                >
+                 Shop Left Sidebar
+                </Link>
+                <Link
                   href="/shoppingCurt"
                   className="block py-2 text-[14px] font-semibold text-[#0D0E43] hover:bg-pink-300"
                 >
@@ -54,7 +66,19 @@ const Navbar = () => {
                   href="/orderCompleted"
                   className="block py-2 text-[14px] font-semibold text-[#0D0E43] hover:bg-pink-300"
                 >
-                  Wishlist
+                  Order Completed
+                </Link>
+                <Link
+                  href="/hektoDemo"
+                  className="block py-2 text-[14px] font-semibold text-[#0D0E43] hover:bg-pink-300"
+                >
+                  Hekto Demo
+                </Link>
+                <Link
+                  href="/singleBlog"
+                  className="block py-2 text-[14px] font-semibold text-[#0D0E43] hover:bg-pink-300"
+                >
+                  Single Blog
                 </Link>
                 <Link
                   href="/aboutUs"
@@ -75,7 +99,14 @@ const Navbar = () => {
           {/* Pages */}
           <p>
             <Link href="/notFound" className="text-[16px] font-medium">
-              Categories
+              Pages
+            </Link>
+          </p>
+
+          {/* Products */}
+          <p>
+            <Link href="/productDetails" className="text-[16px] font-medium">
+              Products
             </Link>
           </p>
 
@@ -88,28 +119,32 @@ const Navbar = () => {
 
           {/* Shop */}
           <p>
-            <Link href="/shopList" className="text-[16px] font-medium">
+            <Link href="/shopGridDefault" className="text-[16px] font-medium">
               Shop
             </Link>
           </p>
 
+          {/* Contact */}
+          <p>
+            <Link href="/contactUs" className="text-[16px] font-medium">
+              Contact
+            </Link>
+          </p>
         </div>
 
         {/* Search Bar */}
-        <div className="hidden md:flex ml-32">
-          <div className="relative" style={{ width: '327px', height: '40px' }}>
+        <div className="hidden md:flex ml-24">
+          <div className="relative" style={{ width: '317px', height: '40px' }}>
             <Input type="search" className="bg-white text-black rounded-none" />
             <Search className="bg-[#FB2E86] absolute right-0 top-0 bottom-0 py-2 rounded-none stroke-white w-12 h-9" />
           </div>
         </div>
       </div>
       <Sheet>
-            <SheetTrigger>
-            <div className='flex md:hidden'>
+            <SheetTrigger className='flex md:hidden'>
             <Button variant={"outline"} size={"icon"}>
             <Menu className='size-4 text-gray-400'/>
             </Button>
-            </div>
             </SheetTrigger>
             <SheetContent side={"right"}>
                 <SheetHeader className='flex items-start'>
